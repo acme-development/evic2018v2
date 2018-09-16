@@ -2,15 +2,58 @@
 nav {
     list-style: none;
     margin-top: 1%;
+    background-color: transparent;
+}
+
+.elses{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/evic-2018.appspot.com/o/imagenFondo%2FFOTOUSACH.jpg?alt=media&token=6b47a2c5-f6b6-4b01-8edd-b2c27c7c132d");
+    background-size: contain;
+}
+
+.navContent{
+    align-items: center;
+    background-color: transparent;
+}
+
+.navContent a{
+    float:left;
+    white-space: nowrap;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+
+}
+.header-align{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: transparent;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    /*text-align: center;*/
+    min-height: 100vh;
+    color: white;
+}
+
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
 }
 a {
     text-decoration: none;
-    opacity: 0.75;
     color: #183ca3;
 }
 
 a:hover {
-    opacity: 1;
+    color: #EA771D;
 }
 
 a.btn {
@@ -42,6 +85,7 @@ header {
     }
 .logo {
     width: 20%;
+    background-color: transparent;
 }
 .hamburger {
     padding:0 0.5em;

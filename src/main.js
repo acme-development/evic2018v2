@@ -2,9 +2,32 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
+import router from './router'; 
+import Buefy from 'buefy';
+import VueSVGIcon from 'vue-svgicon';
+import firebase from 'firebase';
+
+Vue.use(Buefy);
+Vue.use(VueSVGIcon);
+//import 'font-awesome/css/font-awesome.css';
+import 'buefy/dist/buefy.css';
+import 'font-awesome/css/font-awesome.css';
 
 Vue.config.productionTip = false
+
+// Initialize Firebase
+const config = {
+  apiKey: 'AIzaSyByIUXLRk9lWZ_3OWlmr4QZGGhpGRz4l8U',
+  authDomain: 'evic-2018-usach.firebaseapp.com',
+  databaseURL: 'https://evic-2018-usach.firebaseio.com',
+  projectId: 'evic-2018-usach',
+  storageBucket: '',
+  messagingSenderId: '185555076703',
+};
+firebase.initializeApp(config);
+
+
+Vue.use(firebase);
 
 /* eslint-disable no-new */
 new Vue({

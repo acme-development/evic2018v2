@@ -10,9 +10,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "buefy": "^0.6.7",
+    "epic-spinners": "^1.0.3",
     "firebase": "^5.5.0",
+    "font-awesome": "^4.7.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-svgicon": "^3.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
