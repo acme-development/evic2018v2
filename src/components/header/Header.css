@@ -32,6 +32,7 @@ nav {
 
 .header-align{
     padding-left: 15%;
+    height: 50px;
     margin-top: 0%;
     padding-right: 15%;
     background-color: rgba(0, 0, 0, 0.3);
@@ -39,6 +40,7 @@ nav {
     padding-bottom: 0.5%;
 }
 .scroll{
+    height: 50px;
     padding-left: 15%;
     margin-top: 0%;
     padding-right: 15%;
