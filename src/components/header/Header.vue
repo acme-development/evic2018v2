@@ -1,4 +1,4 @@
-<template>
+<template >
 
     <div class="overlay" v-if="spinner">
         <breeding-rhombus-spinner
@@ -7,57 +7,43 @@
           color="#EA771D"
         />
       </div>
-      <div v-else class="elses">
-        
-    
-        
-      <div>
- <header class="header-align">
-    <div class ="logo">
-      <a href="/"><img :src="logo"></a>
-    </div>
-    <i class="fa fa-bars hamburger"></i>
-    
-    <nav class="navContent">
-      <a><router-link :to="{ name: 'Index'}">INICIO</router-link></a>
-      <a><router-link :to="{ name: 'About'}">QUÉ ES EVIC</router-link></a>
-      <a><router-link :to="{ name: 'Program'}">PROGRAMA</router-link></a>
-      <a><router-link :to="{ name: 'Speakers'}">EXPERTOS</router-link></a>
-      <a><router-link :to="{ name: 'Competition'}">CONCURSO</router-link></a>
-      <a><router-link :to="{ name: 'Inscription'}">INSCRIPCIÓN</router-link></a>
-      <a><router-link :to="{ name: 'Location'}">UBICACIÓN</router-link></a>
-    </nav>
-</header>
-   <div class = "putmargin">
-      <transition name="fade-down" mode="out-in" appear>
-      
-        <section class="hero"> 
-
-
-        </section>
-
-      <router-view></router-view>
-      
-    </transition>
-   </div>
-<footer>
-    <p> {{footer}}</p>
-</footer>
-  </div>
-  </div>
+    <div v-else class="elses" >
+      <header class="header-align" id="navbar" >
+          <div class ="logo">
+            <a href="/"><img :src="logo"></a>
+          </div>
+          <i class="fa fa-bars hamburger"></i>
+          
+          <nav class="navContent columns">
+            <a><router-link class="column" :to="{ name: 'Index'}">INICIO</router-link></a>
+            <a><router-link class="column" :to="{ name: 'About'}">QUÉ ES EVIC</router-link></a>
+            <a><router-link class="column" :to="{ name: 'Program'}">PROGRAMA</router-link></a>
+            <a><router-link class="column" :to="{ name: 'Speakers'}">EXPERTOS</router-link></a>
+            <a><router-link class="column" :to="{ name: 'Competition'}">CONCURSO</router-link></a>
+            <a><router-link class="column" :to="{ name: 'Inscription'}">INSCRIPCIÓN</router-link></a>
+            <a><router-link class="column" :to="{ name: 'Location'}">UBICACIÓN</router-link></a>
+          </nav>
+      </header>
+      <div> 
+        <router-view></router-view>
+      </div>
+    <footer>
+      <p> {{footer}}</p>
+    </footer>
+  </div> 
 </template>
 
 <script>
 import firebase from 'firebase';
+import { BreedingRhombusSpinner } from 'epic-spinners';
 
 
 export default {
   name: 'Header',
-  data () {
-    return {
-      msg: 'hello, i\' m the header'
-    }
-  },data() {
+  components: {
+    BreedingRhombusSpinner
+  },
+  data() {
       return {
         titulo: '',
         footer: '',
@@ -67,7 +53,13 @@ export default {
       };
     },
     methods: {
+      handleScroll () {
+        this.scrolled = window.scrollY > 0;
+        const nav = document.querySelector('#navbar');
+        if(window.scrollY <= 10) nav.className = 'header-align'; else nav.className = 'scroll';
+      },
       setData() {
+        window.addEventListener('scroll', this.handleScroll);
         const starCountRef = firebase.database().ref('/');
         starCountRef.once('value', (snapshot) => {
           this.titulo = snapshot.val().titulo;

@@ -50,8 +50,39 @@
 
 
 <script>
+import firebase from 'firebase';
+import { BreedingRhombusSpinner } from 'epic-spinners';
+
+
 export default {
   name: 'About',
+  components: {
+    BreedingRhombusSpinner,
+  },
+  data() {
+    return {
+      title: 'About',
+      spinner: true,
+      informacion: [],
+      comite: [],
+    };
+  },
+  methods: {
+    setData() {
+      const starCountRef = firebase.database().ref('/');
+      starCountRef.once('value', (snapshot) => {
+        const contexto = snapshot.val().acerca.contexto;
+        const evic = snapshot.val().acerca.evic;
+        const publico = snapshot.val().acerca.publico;
+        this.informacion = [contexto, evic, publico];
+        this.comite = snapshot.val().acerca.comite;
+        this.spinner = false;
+      });
+    },
+  },
+  mounted() {
+    this.setData();
+  },
 }
 </script>
 
