@@ -81,6 +81,7 @@ export default {
     },
   },
   mounted() {
+    console.log("Me llamaron ? About");
     this.setData();
   },
 }

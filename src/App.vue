@@ -4,14 +4,16 @@
   </div>
 </template>
 <script>
-import Header from './components/header/Header';
-
+import Layout from './components/layout/Layout';
 
 export default {
   components: {
-    'Header':Header,
+    Layout,
   },
-  
+   created(){
+      this.$store.dispatch( 'loadCafes' );
+      this.$store.dispatch( 'loadUser' );
+    }
   };
 </script>
 

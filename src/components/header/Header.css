@@ -6,12 +6,11 @@ nav {
 }
 
 .elses{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/evic-2018.appspot.com/o/imagenFondo%2FFOTOUSACH.jpg?alt=media&token=6b47a2c5-f6b6-4b01-8edd-b2c27c7c132d");
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    background-size: cover;
+    
+    position:fixed;
+
 }
+
 
 
 .navContent{

@@ -15,21 +15,17 @@
           <i class="fa fa-bars hamburger"></i>
           
           <nav class="navContent columns">
-            <a><router-link class="column" :to="{ name: 'Index'}">INICIO</router-link></a>
-            <a><router-link class="column" :to="{ name: 'About'}">QUÉ ES EVIC</router-link></a>
-            <a><router-link class="column" :to="{ name: 'Program'}">PROGRAMA</router-link></a>
-            <a><router-link class="column" :to="{ name: 'Speakers'}">EXPERTOS</router-link></a>
-            <a><router-link class="column" :to="{ name: 'Competition'}">CONCURSO</router-link></a>
-            <a><router-link class="column" :to="{ name: 'Inscription'}">INSCRIPCIÓN</router-link></a>
-            <a><router-link class="column" :to="{ name: 'Location'}">UBICACIÓN</router-link></a>
+            <a><router-link class="column" :to="{ name: 'home'}">INICIO</router-link></a>
+            <a><router-link class="column" :to="{ name: 'about'}">QUÉ ES EVIC</router-link></a>
+            <a><router-link class="column" :to="{ name: 'program'}">PROGRAMA</router-link></a>
+            <a><router-link class="column" :to="{ name: 'speakers'}">EXPERTOS</router-link></a>
+            <a><router-link class="column" :to="{ name: 'competition'}">CONCURSO</router-link></a>
+            <a><router-link class="column" :to="{ name: 'inscription'}">INSCRIPCIÓN</router-link></a>
+            <a><router-link class="column" :to="{ name: 'location'}">UBICACIÓN</router-link></a>
           </nav>
       </header>
-      <div> 
-        <router-view></router-view>
-      </div>
-    <footer>
-      <p> {{footer}}</p>
-    </footer>
+      <div>   
+    </div>
   </div> 
 </template>
 
