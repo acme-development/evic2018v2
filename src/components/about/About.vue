@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content">
     <div class= "contenedor-exterior">
       <div class ="contenedor-nombre">
         <div>
@@ -9,7 +9,7 @@
           <hr>
         </div>
       </div>
-    </div>
+    
     <div>
       <div class="overlay" v-if="spinner">
         <div>
@@ -45,6 +45,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 

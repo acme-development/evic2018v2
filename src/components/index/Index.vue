@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div class="content">
   <h3>hola</h3>
 </div>
 
@@ -19,3 +19,8 @@ export default {
   },
 }
 </script>
+
+<style>
+  @import './Index.scss';
+</style>
+
