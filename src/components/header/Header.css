@@ -8,7 +8,7 @@ nav {
 .elses{
     
     position:fixed;
-
+    z-index: 900;
 }
 
 

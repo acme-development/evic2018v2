@@ -3,6 +3,7 @@
   <div id="app-layout">
     <Header></Header>
     <router-view></router-view>
+    <!-- footer -->
   </div>
 </template>
 
