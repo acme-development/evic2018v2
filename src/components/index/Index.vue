@@ -1,16 +1,9 @@
 <template>
 
-<div class="content">
+<div class="content-align">
   <section class="titleImg hero is-large">
     <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Large title
-        </h1>
-        <h2 class="subtitle">
-          Large subtitle
-        </h2>
-      </div>
+      <Title/>
     </div>
   </section>
   <section class="hero is-medium is-primary is-bold">
@@ -26,10 +19,11 @@
 </template>
 
 <script>
-import About from "../about/About"
+import About from "../about/About";
+import Title from "../title/Title";
 export default {
   name: 'Index',
-  components: {About},
+  components: {About, Title},
 
 
   created(){

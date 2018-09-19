@@ -1,0 +1,26 @@
+.hero-content-area{
+    text-align: center;
+    animation: 1s slidefade 1s forwards;
+       
+}
+h1{
+    color: #ffffff;
+    font: 700 60px Open Sans,sans-serif;
+    margin-bottom: 15px;
+}
+
+h2{
+    font: normal 28px Open Sans,sans-serif;
+    margin-bottom: 40px;
+    color: #fff;
+}
+h3{
+    font: normal 20px Open Sans,sans-serif;
+    margin-bottom: 40px;
+    color: #fff;
+}
+h4{
+    font: normal 15px Open Sans,sans-serif;
+    margin-bottom: 40px;
+    color: #fff;
+}
