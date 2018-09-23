@@ -46,6 +46,9 @@
       </div>
     </div>
   </div>
+  <div style = "height: 500px; width: 100%;">
+    <ubication></ubication>
+  </div>
   </div>
 </template>
 
@@ -53,12 +56,14 @@
 <script>
 import firebase from 'firebase';
 import { BreedingRhombusSpinner } from 'epic-spinners';
+import Ubication from '../ubication/Ubication.vue'
 
 
 export default {
   name: 'About',
   components: {
     BreedingRhombusSpinner,
+    ubication: Ubication,
   },
   data() {
     return {
