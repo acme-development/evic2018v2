@@ -46,9 +46,6 @@
       </div>
     </div>
   </div>
-  <div style = "height: 500px; width: 100%;">
-    <ubication></ubication>
-  </div>
   </div>
 </template>
 
