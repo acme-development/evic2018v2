@@ -22,6 +22,9 @@
   <section id="competition" class="hero is-large">
     <Competition/>
   </section>
+  <section id="inscription" class ="hero is-large">
+    <Inscription/>
+  </section>
   <section id="ubication" class =" hero is-large" >
     <div class="hero-body">
       <div class="container">
@@ -42,6 +45,7 @@ import Program from "../program/Program";
 import Ubication from "../ubication/Ubication";
 import Experts from "../experts/Experts";
 import Competition from '../competition/Competition';
+import Inscription from '../inscription/Inscription';
 export default {
   name: 'Index',
   components: {
@@ -51,6 +55,7 @@ export default {
     Ubication,
     Experts,
     Competition,
+    Inscription,
     },
 
 
