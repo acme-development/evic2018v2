@@ -8,9 +8,9 @@
   </section>
   <section id = "about" class="hero is-medium is-primary is-bold">
   <div class="hero-body">
-    <div class="container">
+    
       <About/>
-    </div>
+    
   </div>
   </section>
   <section id="program" class="hero is-large">
