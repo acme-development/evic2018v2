@@ -16,6 +16,9 @@
   <section id="program" class="hero is-large">
     <Program/>
   </section>
+  <section id="experts" class="hero is-large">
+    <Experts/>
+  </section>
   <section id="ubication" class =" hero is-large" >
     <div class="hero-body">
       <div class="container">
@@ -33,13 +36,15 @@ import About from "../about/About";
 import Title from "../title/Title";
 import Program from "../program/Program";
 import Ubication from "../ubication/Ubication";
+import Experts from "../experts/Experts";
 export default {
   name: 'Index',
   components: {
     About, 
     Title,
     Program,
-    Ubication
+    Ubication,
+    Experts,
     },
 
 
