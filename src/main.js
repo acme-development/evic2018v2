@@ -6,9 +6,23 @@ import router from './router';
 import Buefy from 'buefy';
 import VueSVGIcon from 'vue-svgicon';
 import firebase from 'firebase';
+import VueScrollTo from 'vue-scrollto';
 
 Vue.use(Buefy);
 Vue.use(VueSVGIcon);
+Vue.use(VueScrollTo, {
+  container: "body",
+  duration: 500,
+  easing: "ease",
+  offset: 0,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+})
 //import 'font-awesome/css/font-awesome.css';
 import 'buefy/dist/buefy.css';
 import 'font-awesome/css/font-awesome.css';

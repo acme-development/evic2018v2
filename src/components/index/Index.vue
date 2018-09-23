@@ -1,18 +1,21 @@
 <template>
 
-<div class="content-align">
-  <section class="titleImg hero is-large">
+<div  class="content-align">
+  <section id="index" class="titleImg hero is-large">
     <div class="hero-body">
       <Title/>
     </div>
   </section>
-  <section class="hero is-medium is-primary is-bold">
+  <section id = "about" class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container">
       <About/>
     </div>
   </div>
-</section>
+  </section>
+  <section id="program" class="hero is-large">
+    <Program/>
+  </section>
 </div>
 
 
@@ -21,9 +24,10 @@
 <script>
 import About from "../about/About";
 import Title from "../title/Title";
+import Program from "../program/Program";
 export default {
   name: 'Index',
-  components: {About, Title},
+  components: {About, Title,Program},
 
 
   created(){

@@ -15,13 +15,13 @@
           <i class="fa fa-bars hamburger"></i>
           
           <nav class="navContent columns">
-            <a><router-link class="column" :to="{ name: 'home'}">INICIO</router-link></a>
-            <a><router-link class="column" :to="{ name: 'about'}">QUÉ ES EVIC</router-link></a>
-            <a><router-link class="column" :to="{ name: 'program'}">PROGRAMA</router-link></a>
-            <a><router-link class="column" :to="{ name: 'speakers'}">EXPERTOS</router-link></a>
-            <a><router-link class="column" :to="{ name: 'competition'}">CONCURSO</router-link></a>
-            <a><router-link class="column" :to="{ name: 'inscription'}">INSCRIPCIÓN</router-link></a>
-            <a><router-link class="column" :to="{ name: 'location'}">UBICACIÓN</router-link></a>
+            <a class="column" href="#" v-scroll-to="'#index'" >INICIO</a>
+            <a class="column" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
+            <a class="column" href="#" v-scroll-to="'#program'" >PROGRAMA</a>
+            <a class="column" href="#" v-scroll-to="'#experts'" >EXPERTOS</a>
+            <a  class="column" href="#" v-scroll-to="'#competition'">CONCURSO</a>
+            <a  class="column" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
+            <a  class="column" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
           </nav>
       </header>
       <div>   
