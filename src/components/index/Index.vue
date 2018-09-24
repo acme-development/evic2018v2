@@ -7,10 +7,8 @@
     </div>
   </section>
   <section id = "about" class="hero is-medium is-primary is-bold">
-  <div class="hero-body">
-    
+  <div class="hero-body about">    
       <About/>
-    
   </div>
   </section>
   <section id="program" class="hero is-large">

@@ -1,6 +1,11 @@
-
+.name h3{
+    font-size: 3.0em;
+    font-weight: lighter;
+    color: #ffffff;
+    padding-bottom: 1%;
+  }
 .content{
-    padding-top: 100px;
+    padding-top: 0px;
     background-repeat: no-repeat;
 }
 .overlay {
@@ -13,16 +18,11 @@
     height: 100%;
     padding: 20% 0 100% 0;
     }
-  .contenedor-exterior{
+.contenedor-exterior{
     display: flex;
     flex-direction: column;
-  }
-  .name h3{
-    font-size: 3.0em;
-    font-weight: lighter;
-    color: #ffffff;
-    padding-bottom: 1%;
-  }
+}
+  
   .info{
       border-left: 1px solid #EA771D;
       border-bottom: 1px dashed #EA771D;
@@ -54,7 +54,7 @@
     font: bold 60px "Open Sans", sans-serif;
   }
   .contenedor-interior{
-    margin: 2% 0% 2% 0%;
+    margin: 20% 0% 2% 0%;
   }
   .contenedor-interior-mapa{
     margin: 0 !important;
