@@ -1,4 +1,41 @@
 <template>
+    
+
+  <div class = "container">
+    <div class = "title-align">
+      <h3 class="title-about">¿QUÉ ES EVIC?</h3>
+    </div>
+    <div class="separator-about"></div>
+    
+    <div class="overlay" v-if="spinner">
+      <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
+    </div>
+
+    <div v-else>
+      <div
+        class="item-content"
+        v-for="(value, index) in informacion"
+        v-bind:key="index">
+        <div v-if="value.mostrar">
+          <div class="item-header">
+            <h3>
+              {{ value.titulo }}
+            </h3>
+          </div>
+          <div class="item-body">
+              <h4 v-html="value.contenido"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+    <!--
+    
     <div class="content">
     <div class= "contenedor-exterior">
       <div class ="contenedor-nombre">
@@ -47,6 +84,8 @@
     </div>
   </div>
   </div>
+
+  -->
 </template>
 
 
@@ -84,12 +123,11 @@ export default {
     },
   },
   mounted() {
-    console.log("Me llamaron ? About");
     this.setData();
   },
 }
 </script>
 
 <style >
-    @import './About.scss';
+    @import './About.css';
 </style>

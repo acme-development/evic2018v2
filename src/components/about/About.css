@@ -1,0 +1,34 @@
+
+.title-align{
+    padding-top: 1%;
+}
+.title-about{
+    text-align: center;
+    color: #313f49;
+    
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    margin-bottom: 1%;
+}
+.separator-about{
+    color: #f57b00;
+    width: 40%;
+    margin: auto;
+    border-bottom:2px solid;
+    height: 5px;
+}
+.item-content{
+    margin-top: 2%;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.item-header h3{
+    color: #313f49;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+}
+.item-body{
+    
+}
+.item-body h4{
+    color: #313f49;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 26.4px; } h3 { font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: ; line-height: 15.4px; } p { font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 21.4333px; } blockquote { font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px;
+}
