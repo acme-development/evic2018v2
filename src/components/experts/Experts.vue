@@ -1,4 +1,45 @@
-<template>
+<template>  
+
+  <div class="container"> 
+    <div class = "title-align">
+      <h3 class="title-about">ORADORES/AS PLENARIA</h3>
+    </div>
+    <div class="separator-about"></div>
+    
+    <div class="overlay" v-if="spinner">
+        <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
+    </div>  
+    <div v-else id="item-content">
+      
+    <b-tabs size="is-large" position="is-centered">
+        <div        
+        v-for="(value) in firebaseInformacion"
+        v-bind:key="value.name">
+        <b-tab-item v-bind:label="value.name">
+          <div class="columns"> 
+          
+            <div class="column is-one-quarter presentation">
+              <div class="photo">
+                <img :src ="value.foto" />
+              </div>
+              <div class="name">
+              </div>
+            </div>
+            <div class="column content">
+              <div class="info">
+                <h3>
+                {{ value.larga}}
+                </h3>
+              </div>
+            </div>
+          </div>
+        </b-tab-item>
+      </div>
+    </b-tabs>
+    </div>
+  </div>
+
+    <!--
     <div>
     <div class="overlay" v-if="spinner">
       <div>
@@ -35,6 +76,7 @@
         </div>
     </div>
   </div>
+  -->
 </template>
 
 <script>    

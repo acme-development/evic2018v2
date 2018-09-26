@@ -18,7 +18,9 @@
     <Experts/>
   </section>
   <section id="competition" class="hero is-large">
-    <Competition/>
+    <section>
+      <Competition/>
+    </section>
   </section>
   <section id="inscription" class ="hero is-large">
     <Inscription/>

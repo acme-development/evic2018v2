@@ -1,3 +1,18 @@
+.title-experts{
+  text-align: center;
+  color: #313f49;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+  margin-bottom: 1%;
+}
+.title-align-experts{
+  padding-bottom: 5%;
+}
+.back-tab-content{
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+
 .overlay {
     position: relative;
     width: 100%;

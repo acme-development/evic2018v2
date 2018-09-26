@@ -6,12 +6,25 @@
     background-color: rgba($color: #FFFFFF, $alpha: 0)
 
 }
-section{
-    background-color: rgba(0, 0, 0, 0.3);
-}
+
 .about{
     background-color: #ffffff;
 }
 #program{
     background-color: rgb(65, 72, 131);
 }
+#experts{
+    background-color: #ffffff;
+}
+#competition{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/evic-2018-usach.appspot.com/o/concurso.jpg?alt=media&token=f457c32b-453e-4719-a675-af8aee155a17');
+    background-size: cover;
+}
+#competition section{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#index{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
