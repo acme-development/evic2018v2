@@ -11,18 +11,21 @@
     </div>  
     <div v-else id="item-content">
       
-    <b-tabs size="is-large" position="is-centered">
         <div        
+        class="expert-content"
         v-for="(value) in firebaseInformacion"
         v-bind:key="value.name">
-        <b-tab-item v-bind:label="value.name">
+          <div class="columns">
+            <div class="name-expert">
+                <h3> {{value.name}} </h3>
+            </div>
+          </div>
           <div class="columns"> 
           
             <div class="column is-one-quarter presentation">
+              
               <div class="photo">
                 <img :src ="value.foto" />
-              </div>
-              <div class="name">
               </div>
             </div>
             <div class="column content">
@@ -33,9 +36,9 @@
               </div>
             </div>
           </div>
-        </b-tab-item>
+          <div class="separator-experts">
+          </div>
       </div>
-    </b-tabs>
     </div>
   </div>
 

@@ -40,11 +40,7 @@
     color: #4a4a4a;
     padding-bottom: 1%;
   }
-  .info{
-      border-left: 1px solid #EA771D;
-      border-bottom: 1px dashed #EA771D;
-      /*float: left;*/
-  }
+  
   .info h3{
     font-weight: lighter;
     font-size: 1.2em;

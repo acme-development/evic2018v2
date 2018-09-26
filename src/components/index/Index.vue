@@ -15,7 +15,9 @@
     <Program/>
   </section>
   <section id="experts" class="hero is-large">
-    <Experts/>
+    <div class="experts-box">
+      <Experts/>
+    </div>
   </section>
   <section id="competition" class="hero is-large">
     <section>

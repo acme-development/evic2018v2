@@ -21,8 +21,7 @@
     padding-bottom: 1%;
   }
   .info{
-      border-left: 1px solid #EA771D;
-      border-bottom: 1px dashed #EA771D;
+      
       display: flex;
       flex-direction: row;
       /*float: left;*/
