@@ -42,7 +42,7 @@ firebase.initializeApp(config);
 
 
 Vue.use(firebase);
-
+require("./assets/css/style.css");
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

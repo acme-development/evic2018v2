@@ -1,45 +1,43 @@
+<style src="./Index.scss"></style>
 <template>
+  <div class="content-align">
 
-<div class="content-align">
-  <section id="index" class="hero is-medium">
-    <section class="hero-body">
-      <Title/>
+    <section id="index" class="hero is-medium">
+      <section class="hero-body">
+        <Title/>
+      </section>
     </section>
-  </section>
 
-  <section id = "about" class="hero is-medium is-primary is-bold">
-  <div class="about">    
-      <About/>
+    <section id = "about" class="hero is-medium is-primary is-bold">
+    <div class="about">    
+        <About/>
+    </div>
+    </section>
+
+    <section id="program" class="hero is-large">
+      <Program/>
+    </section>
+
+    <section id="experts" class="hero is-large">
+      <Experts/>
+    </section>
+
+    <section id="competition" class="hero is-medium">
+      <section>
+        <Competition/>
+      </section>
+    </section>
+
+    <section id="inscription" class ="hero is-large">
+      <Inscription/>
+    </section>
+
+    <section id="ubication" class ="hero is-medium" >
+      <section class="hero-body">
+          <Ubication/>
+      </section>
+    </section>
   </div>
-  </section>
-
-  <section id="program" class="hero is-large">
-    <Program/>
-  </section>
-
-  <section id="experts" class="hero is-large">
-    <Experts/>
-  </section>
-
-  <section id="competition" class="hero is-large">
-    <section>
-      <Competition/>
-    </section>
-  </section>
-
-  <section id="inscription" class ="hero is-large">
-    <Inscription/>
-  </section>
-
-  <section id="ubication" class ="hero is-medium" >
-    <section class="hero-body">
-        <Ubication/>
-    </section>
-  </section>
-  
-</div>
-
-
 </template>
 
 <script>
@@ -61,18 +59,12 @@ export default {
     Competition,
     Inscription,
     },
-
-
   created(){
-    console.log("He sido llamado");
+    //console.log("He sido llamado");
   },
   mounted() {
-    console.log("He sido llamado");
+    //console.log("He sido llamado");
   },
 }
 </script>
-
-<style>
-  @import './Index.scss';
-</style>
 

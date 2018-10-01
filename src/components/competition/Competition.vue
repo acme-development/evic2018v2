@@ -1,13 +1,9 @@
 <template>
     <div>
     <div class= "contenedor-exterior">
-      <div class ="contenedor-nombre">
-        <div>
-          <h3>Concurso de posters</h3>
-        </div>
-        <div>
-          <hr>
-        </div>
+      <div class ="contenedor-titulo">
+        <h3>Concurso de posters</h3>
+        <hr>
       </div>
     </div>
     <div>

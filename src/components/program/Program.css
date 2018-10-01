@@ -1,119 +1,39 @@
-
 .spinner{
-    margin-left: 50%;
-    margin-top: 10%;
-    margin-bottom: 30%;
-  }
-  .imageProgram{
-    margin-top: 5%;
-  }
-  .dateCont{
-    margin-right: 5%;
-  }
-  .hourDetailRow{
-    margin-top: 1%;
-  }
-  .dayContainer{
-    margin-top: 5%;
-  }
-  .description{
-    margin-top: 0.7%;
-  }
-  .overlay {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 20% 0 100% 0;
-    }
-  .contenedor-exterior{
-    display: flex;
-    flex-direction: column;
-    padding: 4% 10% 2% 10%;
-  }
-  .name h3{
-    font-size: 3.0em;
-    font-weight: lighter;
-    color: #4a4a4a;
-    padding-bottom: 1%;
-  }
-  .info{
-      border-left: 1px solid #EA771D;
-      border-bottom: 1px dashed #EA771D;
-      /*float: left;*/
-  }
-  .info h3{
-    font-weight: lighter;
-    font-size: 1.2em;
-    padding: 1% 2% 2% 2%;
-  }
-  .contenedor-interior{
-    margin: 2% 0% 2% 0%;
-  }
-  .contenedor-interior-mapa{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .contenedor-nombre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-  }
-  .contenedor-nombre h3{
-    text-transform: capitalize;
-    font: bold 32px "Open Sans", sans-serif;
-    /*margin-bottom: 30px;*/
-  }
-  .contenedor-dir{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-  }
-  .contenedor-dir h3{
-    font-size: 3.0em;
-    font-weight: lighter;
-    color: #4a4a4a;
-    padding-bottom: 1%;
-  }
-  hr {
-      width: 240px;
-      height: 3px;
-      background-color: #EA771D;
-      border: 0;
-      margin-bottom: 50px;
-  }
-  /* Contact Section */
-  .contact {
-      padding: 0 !important;
-  }
-  .divider {
-    width: 2px;
-    margin: 6px 0;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 5%;
-    background: #EA771D;
-  }
-  
-  
-  @media screen and (max-width: 1440px) {
-      .contact form input {
-          flex-basis: 100%;
-          margin: 0 0 20px 0;
-      }
-  }
-  .event-time{
-    font-weight: normal;
-    font-size: 1.5em;
-    color:#EA771D;
-  }
-  .event-name {
-    font-weight: lighter;
-    font-size: 1.2em;
-  }
+  margin-left: 50%;
+  margin-top: 10%;
+  margin-bottom: 30%;
+}
+.imageProgram{
+  margin-top: 5%;
+}
+.dateCont{
+  margin-right: 5%;
+}
+.hourDetailRow{
+  margin-top: 1%;
+}
+.dayContainer{
+  margin-top: 5%;
+}
+.description{
+  margin-top: 0.7%;
+}
+.name h3{
+  font-size: 3.0em;
+  font-weight: lighter;
+  color: #4a4a4a;
+  padding-bottom: 1%;
+}
+.divider {
+  width: 2px;
+  margin: 6px 0;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 5%;
+  background: #EA771D;
+}
+.event-time{
+  font-weight: normal;
+  font-size: 1.5em;
+  color:#EA771D;
+}
