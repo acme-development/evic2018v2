@@ -1,36 +1,40 @@
 <template>
 
-<div  class="content-align">
-  <section id="index" class="titleImg hero is-large">
-    <div class="hero-body">
+<div class="content-align">
+  <section id="index" class="hero is-medium">
+    <section class="hero-body">
       <Title/>
-    </div>
+    </section>
   </section>
+
   <section id = "about" class="hero is-medium is-primary is-bold">
   <div class="hero-body about">    
       <About/>
   </div>
   </section>
+
   <section id="program" class="hero is-large">
     <Program/>
   </section>
+
   <section id="experts" class="hero is-large">
     <Experts/>
   </section>
+
   <section id="competition" class="hero is-large">
     <section>
       <Competition/>
     </section>
   </section>
+
   <section id="inscription" class ="hero is-large">
     <Inscription/>
   </section>
-  <section id="ubication" class =" hero is-large" >
-    <div class="hero-body">
-      <div class="container">
+
+  <section id="ubication" class ="hero is-medium" >
+    <section class="hero-body">
         <Ubication/>
-      </div>
-    </div>
+    </section>
   </section>
   
 </div>

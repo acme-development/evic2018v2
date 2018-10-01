@@ -1,32 +1,28 @@
 <template >
-
     <div class="overlay" v-if="spinner">
         <breeding-rhombus-spinner
           :animation-duration="2000"
           :size="65"
           color="#EA771D"
         />
-      </div>
+    </div>
     <div v-else class="elses" >
       <header class="header-align" id="navbar" >
           <div class ="logo">
             <a href="/"><img :src="logo"></a>
           </div>
           <i class="fa fa-bars hamburger"></i>
-          
           <nav class="navContent columns">
-            <a class="column" href="#" v-scroll-to="'#index'" >INICIO</a>
+            <a class="column" href ="#" v-scroll-to="'#index'" >INICIO</a>
             <a class="column" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
-            <a class="column" href="#" v-scroll-to="'#program'" >PROGRAMA</a>
-            <a class="column" href="#" v-scroll-to="'#experts'" >EXPERTOS</a>
-            <a  class="column" href="#" v-scroll-to="'#competition'">CONCURSO</a>
-            <a  class="column" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
-            <a  class="column" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
+            <a class="column" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
+            <a class="column" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>
+            <a class="column" href ="#" v-scroll-to="'#competition'">CONCURSO</a>
+            <a class="column" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
+            <a class="column" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
           </nav>
       </header>
-      <div>   
-    </div>
-  </div> 
+    </div> 
 </template>
 
 <script>
@@ -72,8 +68,6 @@ export default {
     },
 }
 </script>
-
-
 <style>
 @import './Header.css';
 </style>
