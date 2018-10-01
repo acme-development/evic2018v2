@@ -1,7 +1,7 @@
 
 <template>
     <div class="hero-content-area container">
-        <h1 >EVIC</h1>
+        <h1> EVIC </h1>
         <h2>  XIV IEEE Escuela de Verano Latinoamericana en Inteligencia Computacional </h2>
         <div class="separator"> </div>
         <h3>  12 - 13 - 14 / Diciembre de 2018 </h3>

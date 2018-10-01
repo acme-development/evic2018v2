@@ -1,45 +1,5 @@
-.container{
-    margin-top: 7%;
-}
-
-.title-align{
-    padding-top: 1%;
-}
-.title-about{
-    text-align: center;
-    color: #313f49;
-    font-family: Futura, Trebuchet MS, Arial, sans-serif; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
-    margin-bottom: 1%;
-}
-.separator-about{
-    color: #f57b00;
-    width: 40%;
-    margin: auto;
-    border-bottom:2px solid;
-    height: 5px;
-}
 .item-content{
     margin-top: 2%;
     padding: 10px;
     padding-bottom: 0px;
-}
-.item-header h3{
-    color: #313f49;
-    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
-    font-size: 24px;
-    font-style: normal; 
-    font-variant: normal;
-    margin-bottom: 2%;
-}
-.item-body{
-    text-align: justify;
-}
-.item-body h4{
-    color: #313f49;
-    font-family: Lato, Trebuchet MS, Arial, sans-serif; 
-    font-size: 20px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 26.4px; 
 }

@@ -2,41 +2,47 @@
 <template>
   <div class="content-align">
 
-    <section id="index" class="hero is-medium">
+    <div id="index" class="hero is-medium">
       <section class="hero-body">
         <Title/>
       </section>
-    </section>
-
-    <section id = "about" class="hero is-medium is-primary is-bold">
-    <div class="about">    
-        <About/>
     </div>
-    </section>
 
-    <section id="program" class="hero is-large">
-      <Program/>
-    </section>
+    <div id = "about" class="hero is-medium">
+      <section class="about hero-body">    
+        <About/>
+      </section>
+    </div>
 
-    <section id="experts" class="hero is-large">
-      <Experts/>
-    </section>
-
-    <section id="competition" class="hero is-medium">
+    <div id="program" class="hero is-medium">
       <section>
+        <Program/>
+      </section>
+    </div>
+
+    <div id="experts" class="hero is-medium">
+      <section class="hero-body">
+        <Experts/>
+      </section>
+    </div>
+
+    <div id="competition" class="hero is-medium">
+      <section class="hero-body">
         <Competition/>
       </section>
-    </section>
+    </div>
 
-    <section id="inscription" class ="hero is-large">
-      <Inscription/>
-    </section>
+    <div id="inscription" class ="hero is-medium">
+      <section class="hero">
+        <Inscription/>
+      </section>
+    </div>
 
-    <section id="ubication" class ="hero is-medium" >
-      <section class="hero-body">
+    <div id="ubication" class ="hero is-medium" >
+      <section class="hero">
           <Ubication/>
       </section>
-    </section>
+    </div>
   </div>
 </template>
 

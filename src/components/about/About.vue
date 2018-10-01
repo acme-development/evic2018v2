@@ -1,9 +1,9 @@
+
+<style src="./About.css"></style>
 <template>
   <div class = "container">
-    <div class = "title-align">
-      <h3 class="title-about">¿Qué es EVIC?</h3>
-    </div>
-    <div class="separator-about"></div>
+    <h2 class="title">¿Qué es EVIC?</h2>
+    <div class="separator-title"></div>
     <div class="overlay" v-if="spinner">
       <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
     </div>
@@ -13,14 +13,14 @@
         v-for="(value, index) in informacion"
         v-bind:key="index">
         <div v-if="value.mostrar">
-          <div class="item-header">
+          <div class="subtitle">
             <h3>
               <i class="fas fa-angle-right"></i>
               {{ value.titulo }}
             </h3>
           </div>
-          <div class="item-body">
-              <h4 v-html="value.contenido"></h4>
+          <div class="content">
+              <p v-html="value.contenido"></p>
           </div>
         </div>
       </div>
@@ -66,7 +66,3 @@ export default {
   },
 }
 </script>
-
-<style >
-    @import './About.css';
-</style>

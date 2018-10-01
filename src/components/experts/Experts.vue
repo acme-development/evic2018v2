@@ -1,9 +1,7 @@
 <template>  
   <div class="container"> 
-    <div class = "title-align">
-      <h3 class="title-about">ORADORES/AS PLENARIA</h3>
-    </div>
-    <div class="separator-about"></div>
+    <div class ="title">Oradores/as plenaria</div>
+    <div class="separator-title"></div>
     
     <div class="overlay" v-if="spinner">
         <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
@@ -21,10 +19,10 @@
               </div>
             </div>
             <div class="column content">
-              <div class="info">
-                <h3>
+              <div class="info content">
+                <p>
                 {{ value.larga}}
-                </h3>
+                </p>
               </div>
             </div>
           </div>

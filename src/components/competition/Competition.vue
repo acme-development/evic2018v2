@@ -1,11 +1,8 @@
+<style src="./Competition.css"></style>
 <template>
-    <div>
-    <div class= "contenedor-exterior">
-      <div class ="contenedor-titulo">
-        <h3>Concurso de posters</h3>
-        <hr>
-      </div>
-    </div>
+    <div class="container">
+      <div class="title white"> Concurso </div>
+      <div class="separator-title"></div>
     <div>
       <div v-if="moreInformation==0">
         <div class="overlay" v-if="spinner">
@@ -22,23 +19,24 @@
             class ="contenedor-interior"
             v-for="(value, index) in firebaseInformacion"
             v-bind:key="index">
-            <div v-if="value.mostrar==1">
-              <div class="name">
-                <h3>
-                  {{ value.titulo }}
-                </h3>
+              <div v-if="value.mostrar==1">
+                <div class="subtitle">
+                  <h3>
+                    <i class="fas fa-angle-right orange"></i>
+                    {{ value.titulo }}
+                  </h3>
+                </div>
+                <div class="info"
+                  v-for="(info, index) in value.informacion"
+                  v-bind:key="index">
+                  <h4 v-if="info.nombre != ''">
+                    {{info.nombre}}
+                  </h4>
+                  <h3 v-if="info.data != ''">
+                    {{info.data}}
+                  </h3>
+                </div>
               </div>
-              <div class="info"
-                v-for="(info, index) in value.informacion"
-                v-bind:key="index">
-                <h4>
-                  {{info.nombre}}
-                </h4>
-                <h3>
-                  {{info.data}}
-                </h3>
-              </div>
-            </div>
             </div>
         </div>
       </div>
@@ -91,9 +89,5 @@ export default {
   },
 };
 </script>
-
-<style>
-@import './Competition.css';
-</style>
 
 
