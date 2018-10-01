@@ -39,7 +39,7 @@
     </div>
 
     <div id="ubication" class ="hero is-medium" >
-      <section class="hero">
+      <section class="hero-body">
           <Ubication/>
       </section>
     </div>

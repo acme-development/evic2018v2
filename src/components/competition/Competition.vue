@@ -29,12 +29,8 @@
                 <div class="info"
                   v-for="(info, index) in value.informacion"
                   v-bind:key="index">
-                  <h4 v-if="info.nombre != ''">
-                    {{info.nombre}}
-                  </h4>
-                  <h3 v-if="info.data != ''">
-                    {{info.data}}
-                  </h3>
+                  <h4 v-if="info.nombre != ''" v-html="info.nombre"></h4>
+                  <h3 v-if="info.data != ''" v-html="info.data"></h3>
                 </div>
               </div>
             </div>
