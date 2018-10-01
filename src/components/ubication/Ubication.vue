@@ -15,7 +15,7 @@
 		</div>
 		<div class= "contenedor-exterior">
 			<div class ="contenedor-interior" v-for="(value, index) in firebaseInformacion" v-bind:key="index">
-				<div class="subtitle">
+				<div class="subtitle-1">
 					<h3>
 					<i class="fas fa-angle-right orange"></i>
 					{{ value.nombre }}

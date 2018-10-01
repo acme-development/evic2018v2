@@ -20,7 +20,7 @@
             v-for="(value, index) in firebaseInformacion"
             v-bind:key="index">
               <div v-if="value.mostrar==1">
-                <div class="subtitle">
+                <div class="subtitle-1">
                   <h3>
                     <i class="fas fa-angle-right orange"></i>
                     {{ value.titulo }}
