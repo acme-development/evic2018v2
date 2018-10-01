@@ -8,7 +8,7 @@
   </section>
 
   <section id = "about" class="hero is-medium is-primary is-bold">
-  <div class="hero-body about">    
+  <div class="about">    
       <About/>
   </div>
   </section>

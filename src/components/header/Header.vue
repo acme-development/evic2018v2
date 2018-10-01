@@ -39,7 +39,7 @@ export default {
       return {
         titulo: '',
         footer: '',
-        logo: '',
+        logo: 'https://firebasestorage.googleapis.com/v0/b/evic-2018-usach.appspot.com/o/Evic_2018.png?alt=media&token=ce492e24-1373-42db-a7b0-e8f2c2bb2281',
         image : '',
         spinner:true,
       };
@@ -58,7 +58,7 @@ export default {
           this.image = snapshot.val().fondo;
           console.log("Se obtiene el valor");
           this.footer = snapshot.val().footer;
-          this.logo = snapshot.val().logo;
+          //this.logo = snapshot.val().logo;
           this.spinner = false;
         });
       },
