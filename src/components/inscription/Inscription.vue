@@ -2,7 +2,7 @@
   <div class="section-margin">
     <div class="container ">
       <div>
-      <h2 class="title title-w"> Inscripción </h2>
+      <h2 class="title "> Inscripción </h2>
       <div class="separator-title separation"></div>
       </div>
       <div class="table-content">
