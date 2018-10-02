@@ -43,6 +43,11 @@
           <Ubication/>
       </section>
     </div>
+    <div id="exhibitors" class="hero is-medium">
+      <section class="hero-body">
+        <Exhibitors/>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -54,6 +59,7 @@ import Ubication from "../ubication/Ubication";
 import Experts from "../experts/Experts";
 import Competition from '../competition/Competition';
 import Inscription from '../inscription/Inscription';
+import Exhibitors from '../exhibitors/Exhibitors';
 export default {
   name: 'Index',
   components: {
@@ -64,6 +70,7 @@ export default {
     Experts,
     Competition,
     Inscription,
+    Exhibitors,
     },
   created(){
     //console.log("He sido llamado");

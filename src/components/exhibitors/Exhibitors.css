@@ -1,0 +1,23 @@
+.contenedor-expositores{
+    padding: 3%;
+    text-align: center;
+}
+.expositor{
+    margin-top: 5%;
+}
+.expositor h3{
+    color: #dee5eb;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    font-size: 24px;
+    margin-bottom: 0%;
+}
+.institucion h3{
+    color: #dee5eb;
+    font-family: Lato, Trebuchet MS, Arial, sans-serif; 
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 2%;
+}
+.image img{
+    border:2px solid #423d38;
+}
