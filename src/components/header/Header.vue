@@ -12,7 +12,6 @@
           <div class ="logo">
             <a href="/"><img :src="logo"></a>
           </div>
-          <i class="fa fa-bars hamburger white"></i>
           <nav class="navContent columns">
             <a class="column" href ="#" v-scroll-to="'#index'" >INICIO</a>
             <a class="column" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
