@@ -3,7 +3,7 @@
 
   <div class="section-margin">
       <div class="container">
-        <div class="title white"> Concurso </div>
+        <h2 class="title title-w"> Concurso </h2>
         <div class="separator-title"></div>
       <div>
         <div v-if="moreInformation==0">

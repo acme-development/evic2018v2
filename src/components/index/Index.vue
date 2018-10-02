@@ -33,7 +33,7 @@
     </div>
 
     <div id="inscription" class ="hero is-medium">
-      <section class="hero">
+      <section class="hero-body">
         <Inscription/>
       </section>
     </div>

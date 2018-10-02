@@ -9,10 +9,11 @@
     </div>
     <div v-else class="elses" >
       <header class="header-align" id="navbar" >
-          <div class ="logo">
-            <a href="/"><img :src="logo"></a>
-          </div>
+          
           <nav class="navContent columns">
+            <div class ="logo column a-logo">
+            <a href="/" class ="a-logo"><img class="img-fit" :src="logo"></a>
+            </div>
             <a class="column" href ="#" v-scroll-to="'#index'" >INICIO</a>
             <a class="column" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
             <a class="column" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>

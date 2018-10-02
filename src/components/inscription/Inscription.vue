@@ -1,18 +1,24 @@
 <template>
   <div class="section-margin">
-    <div class="container tableAsistant">
-      <b-table :data="data" :columns="columns" >
-        <template slot-scope="props" slot="header">
-          <div class="table-head">
-              {{ props.column.label }}
-          </div>
-        </template>
-      </b-table>
-      <h3 class="students-details"> ** Estudiantes deben adjuntar una copia de su
-        ID de estudiante y algún
-        documento o carta (todo en un mismo documento) que acredite su dedicación
-        a tiempo completo a un programa de pre o postgrado. Estudiantes part-time
-        tendrán el beneficio de descuento que aplica a miembros profesionales del IEEE. </h3>
+    <div class="container ">
+      <div>
+      <h2 class="title title-w"> Inscripción </h2>
+      <div class="separator-title separation"></div>
+      </div>
+      <div class="table-content">
+        <b-table :data="data" :columns="columns" >
+          <template slot-scope="props" slot="header">
+            <div class="table-head">
+                {{ props.column.label }}
+            </div>
+          </template>
+        </b-table>
+        <h3 class="students-details"> ** Estudiantes deben adjuntar una copia de su
+          ID de estudiante y algún
+          documento o carta (todo en un mismo documento) que acredite su dedicación
+          a tiempo completo a un programa de pre o postgrado. Estudiantes part-time
+          tendrán el beneficio de descuento que aplica a miembros profesionales del IEEE. </h3>
+      </div>
     </div>
   </div>
 </template>
