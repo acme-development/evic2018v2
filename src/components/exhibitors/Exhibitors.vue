@@ -1,0 +1,58 @@
+<style src = "./Exhibitors.css"></style>
+<template>
+    <div class="container">
+        <div class ="title white">Expositores</div>
+        <div class="separator-title"></div>
+        <div class="contenedor-exterior">
+            <!--<div class ="contenedor-interior" v-for="(value) in firebaseInformacion" v-bind:key="value.name">
+                <div class="name">
+                    <h3>
+                        {{ value.name }}
+                    </h3>
+                </div>
+                <div class="info">
+                    <h3>
+                        {{ value.institucion}}
+                    </h3>
+                </div>
+            </div>-->
+            <div class="columns is-multiline is-desktop">
+                <div class="column is-half" v-for="(value) in firebaseInformacion" v-bind:key="value.name">
+                    <div class="name">
+                        <h3>
+                            {{ value.name }}
+                        </h3>
+                    </div>
+                    <div class="info">
+                        <h3>
+                            {{ value.institucion }}
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+import firebase from 'firebase';
+export default {
+    data: function(){
+        return{
+            firebaseInformacion: {},
+        }
+    },
+    mounted: function(){
+        this.setData();
+    },
+    methods:{
+        setData: function(){
+            const starCountRef = firebase.database().ref('expositores');
+            starCountRef.once('value', (snapshot) => {
+                this.firebaseInformacion = snapshot.val();
+            });
+        }
+    },
+}
+</script>
+
+
