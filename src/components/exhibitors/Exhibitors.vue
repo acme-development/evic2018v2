@@ -3,27 +3,20 @@
     <div class="container">
         <div class ="title white">Expositores</div>
         <div class="separator-title"></div>
-        <div class="contenedor-exterior">
-            <!--<div class ="contenedor-interior" v-for="(value) in firebaseInformacion" v-bind:key="value.name">
-                <div class="name">
-                    <h3>
-                        {{ value.name }}
-                    </h3>
-                </div>
-                <div class="info">
-                    <h3>
-                        {{ value.institucion}}
-                    </h3>
-                </div>
-            </div>-->
-            <div class="columns is-multiline is-desktop">
-                <div class="column is-half" v-for="(value) in firebaseInformacion" v-bind:key="value.name">
-                    <div class="name">
+        <div class="contenedor-expositores">
+            <div class="columns is-multiline is-mobile is-centered">
+                <div class="column is-one-third expositor" v-for="(value) in firebaseInformacion" v-bind:key="value.name">
+                    <div align="center">
+                        <figure class ="image is-128x128">
+                            <img :src="value.image" class="is-rounded">
+                        </figure>
+                    </div>
+                    <div class="expositor">
                         <h3>
                             {{ value.name }}
                         </h3>
                     </div>
-                    <div class="info">
+                    <div class="institucion">
                         <h3>
                             {{ value.institucion }}
                         </h3>
