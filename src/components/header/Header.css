@@ -34,7 +34,6 @@ nav a {
     }
 .elses{    
     position:fixed;
-    height: 50%;
     width: 100%;
     z-index: 900;
 }
