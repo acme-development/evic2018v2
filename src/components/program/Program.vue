@@ -1,19 +1,23 @@
 <template>
-    <div>
-        <div v-if="spinner">
-        <div class="spinner">
-            <breeding-rhombus-spinner
-            :size="65"
-            color="#EA771D"
-            />
-        </div>
-        </div>
-        <div v-else class="container imageProgram">
+  <div class="section-margin">
+    <div v-if="spinner">
+      <div class="spinner">
+          <breeding-rhombus-spinner
+          :size="65"
+          color="#EA771D"
+          />
+      </div>
+    </div>
+    <div v-else class="container">
+      <h2 class="title title-w" >Programa</h2>
+      <div class="separator-title"></div>
+      <div class ="imageProgram"> 
         <div class ="containerImg">
             <img :src="this.imgProgram.img">
         </div>
-        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>

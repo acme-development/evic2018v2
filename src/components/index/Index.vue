@@ -15,7 +15,7 @@
     </div>
 
     <div id="program" class="hero is-medium">
-      <section>
+      <section class="hero-body">
         <Program/>
       </section>
     </div>

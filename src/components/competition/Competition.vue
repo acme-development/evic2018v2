@@ -1,45 +1,48 @@
 <style src="./Competition.css"></style>
 <template>
-    <div class="container">
-      <div class="title white"> Concurso </div>
-      <div class="separator-title"></div>
-    <div>
-      <div v-if="moreInformation==0">
-        <div class="overlay" v-if="spinner">
-          <div>
-            <breeding-rhombus-spinner
-              :animation-duration="2000"
-              :size="65"
-              color="#EA771D"
-            />
+
+  <div class="section-margin">
+      <div class="container">
+        <div class="title white"> Concurso </div>
+        <div class="separator-title"></div>
+      <div>
+        <div v-if="moreInformation==0">
+          <div class="overlay" v-if="spinner">
+            <div>
+              <breeding-rhombus-spinner
+                :animation-duration="2000"
+                :size="65"
+                color="#EA771D"
+              />
+            </div>
           </div>
-        </div>
-        <div v-else class= "contenedor-exterior">
-            <div
-            class ="contenedor-interior"
-            v-for="(value, index) in firebaseInformacion"
-            v-bind:key="index">
-              <div v-if="value.mostrar==1">
-                <div class="subtitle-1">
-                  <h3>
-                    <i class="fas fa-angle-right orange"></i>
-                    {{ value.titulo }}
-                  </h3>
-                </div>
-                <div class="info"
-                  v-for="(info, index) in value.informacion"
-                  v-bind:key="index">
-                  <h4 v-if="info.nombre != ''" v-html="info.nombre"></h4>
-                  <h3 v-if="info.data != ''" v-html="info.data"></h3>
+          <div v-else class= "contenedor-exterior">
+              <div
+              class ="contenedor-interior"
+              v-for="(value, index) in firebaseInformacion"
+              v-bind:key="index">
+                <div v-if="value.mostrar==1">
+                  <div class="subtitle-1">
+                    <h3>
+                      <i class="fas fa-angle-right orange"></i>
+                      {{ value.titulo }}
+                    </h3>
+                  </div>
+                  <div class="info"
+                    v-for="(info, index) in value.informacion"
+                    v-bind:key="index">
+                    <h4 v-if="info.nombre != ''" v-html="info.nombre"></h4>
+                    <h3 v-if="info.data != ''" v-html="info.data"></h3>
+                  </div>
                 </div>
               </div>
-            </div>
+          </div>
         </div>
-      </div>
-      <div v-else class ="pantalla-mas-informacion">
-        <h3>
-          {{msjeMasInformacion}}
-        </h3>
+        <div v-else class ="pantalla-mas-informacion">
+          <h3>
+            {{msjeMasInformacion}}
+          </h3>
+        </div>
       </div>
     </div>
   </div>

@@ -94,6 +94,9 @@ hr{
     font-family: Lato, sans-serif;
     font-size: 40px;
 }
+.title-w{
+    color: #ffffff;
+}
 .subtitle h3{
     color: #313f49;
     font-family: Futura, Trebuchet MS, Arial, sans-serif; 
@@ -118,4 +121,8 @@ hr{
     margin: auto;
     border-bottom:2px solid;
     height: 5px;
+}
+/* Section */
+.section-margin{
+    margin-top: 40px;
 }

@@ -1,37 +1,39 @@
 <template>  
-  <div class="container"> 
-    <div class ="title">Oradores/as plenaria</div>
-    <div class="separator-title"></div>
-    
-    <div class="overlay" v-if="spinner">
-        <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
-    </div>  
-    <div v-else id="item-content">
-    <b-tabs size="is-large" position="is-centered">
-        <div        
-        v-for="(value) in firebaseInformacion"
-        v-bind:key="value.name">
-        <b-tab-item v-bind:label="value.name">
-          <div class="columns"> 
-            <div class="column is-one-quarter presentation">
-              <div class="photo">
-                <img :src ="value.foto"/>
+  <div class="section-margin">
+    <div class="container"> 
+      <div class ="title">Oradores/as plenaria</div>
+      <div class="separator-title"></div>
+      
+      <div class="overlay" v-if="spinner">
+          <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
+      </div>  
+      <div v-else id="item-content">
+      <b-tabs size="is-large" position="is-centered">
+          <div        
+          v-for="(value) in firebaseInformacion"
+          v-bind:key="value.name">
+          <b-tab-item v-bind:label="value.name">
+            <div class="columns"> 
+              <div class="column is-one-quarter presentation">
+                <div class="photo">
+                  <img :src ="value.foto"/>
+                </div>
+              </div>
+              <div class="column content">
+                <div class="info content">
+                  <p>
+                  {{ value.larga}}
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="column content">
-              <div class="info content">
-                <p>
-                {{ value.larga}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </b-tab-item>
-      </div>
-    </b-tabs>
+          </b-tab-item>
+        </div>
+      </b-tabs>
     </div>
   </div>
 
+  </div>
     <!--
     <div>
     <div class="overlay" v-if="spinner">
