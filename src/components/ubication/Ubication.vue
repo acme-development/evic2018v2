@@ -4,7 +4,7 @@
 <template>
 	<div class="section-margin">
 		<div class="container">
-			<div class="title white"> Ubicación </div>
+			<div class="title title-w"> Ubicación </div>
 			<div class="separator-title"></div>
 			
 			<div class="direction">

@@ -12,15 +12,15 @@
           
           <nav class="navContent columns">
             <div class ="logo column a-logo">
-            <a href="/" class ="a-logo"><img class="img-fit" :src="logo"></a>
+              <a href="/" class ="a-logo"><img class="img-fit" :src="logo"></a>
             </div>
-            <a class="column" href ="#" v-scroll-to="'#index'" >INICIO</a>
-            <a class="column" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
-            <a class="column" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
-            <a class="column" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>
-            <a class="column" href ="#" v-scroll-to="'#competition'">CONCURSO</a>
-            <a class="column" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
-            <a class="column" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#index'" >INICIO</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
+            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
           </nav>
       </header>
     </div> 

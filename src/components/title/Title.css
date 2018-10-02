@@ -5,24 +5,23 @@
     position: 50% 50%;
     
 }
-h1{
+#title-container h1{
     color: #ffffff;
     font: 700 60px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 15px;
     text-align: center;
 }
-
-h2{
+#title-container h2{
     font: normal 28px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 20px;
     color: #fff;
 }
-h3{
+#title-container h3{
     font: normal 20px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 40px;
     color: #fff;
 }
-h4{
+#title-container h4{
     font: normal 15px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 40px;
     color: #fff;
