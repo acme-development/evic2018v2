@@ -47,6 +47,11 @@
         <Exhibitors/>
       </section>
     </div>
+    <div id ="organization" class="hero is-medium" >
+      <section class="hero-body">
+        <Organization/>
+      </section>
+    </div>
     <div id ="sponsors" >
         <section >
           <Sponsors/>
@@ -65,6 +70,7 @@ import Competition from '../competition/Competition';
 import Inscription from '../inscription/Inscription';
 import Exhibitors from '../exhibitors/Exhibitors';
 import Sponsors from '../sponsors/Sponsors';
+import Organization from '../organization/Organization';
 export default {
   name: 'Index',
   components: {
@@ -77,6 +83,7 @@ export default {
     Inscription,
     Exhibitors,
     Sponsors,
+    Organization,
     },
   created(){
     //console.log("He sido llamado");

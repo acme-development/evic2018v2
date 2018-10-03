@@ -1,0 +1,28 @@
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.packages .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.packages .grid li i {
+    color: #ffffff;
+}
+
+.packages .grid li h4 {
+    font-size: 30px;
+    margin: 25px 0;
+    color: #ffffff
+}
+.packages .grid li p {
+    color:#EA771D
+}
+.packages .grid li h2 {
+    color:#ffffff
+}
