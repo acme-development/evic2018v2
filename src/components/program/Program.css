@@ -3,14 +3,14 @@
   color: #ffffff;
 
 }
+#header-program{
+  margin-bottom: 3%;
+}
 
 .spinner{
   margin-left: 50%;
   margin-top: 10%;
   margin-bottom: 30%;
-}
-.imageProgram{
-  margin-top: 10%;
 }
 .dateCont{
   margin-right: 5%;

@@ -9,12 +9,12 @@
       </div>
     </div>
     <div v-else class="container">
-      <h2 class="title title-w" >Programa</h2>
-      <div class="separator-title"></div>
-      <div class ="imageProgram"> 
-        <div class ="containerImg">
-            <img :src="this.imgProgram.img">
-        </div>
+      <div id="header-program">
+        <h2 class="title title-w" >Programa</h2>
+        <div class="separator-title"></div>
+      </div>
+      <div class ="containerImg">
+          <img :src="this.imgProgram.img">
       </div>
     </div>
   </div>
