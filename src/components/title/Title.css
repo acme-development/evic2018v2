@@ -1,9 +1,9 @@
-.hero-content-area{
+
+#title-container{
     margin-top: 10%;
     text-align: center;
     animation: 1s slidefade 1s forwards;
     position: 50% 50%;
-    
 }
 #title-container h1{
     color: #ffffff;

@@ -1,6 +1,6 @@
 
 <template>
-    <div id= "title-container" class="hero-content-area container">
+    <div id= "title-container" class="container ">
         <h1> EVIC </h1>
         <h2>  XIV IEEE Escuela de Verano Latinoamericana en Inteligencia Computacional </h2>
         <div class="separator"> </div>
