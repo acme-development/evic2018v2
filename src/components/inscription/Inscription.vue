@@ -1,9 +1,9 @@
 <template>
   <div class="section-margin">
     <div class="container ">
-      <div>
-      <h2 class="title "> Inscripción </h2>
-      <div class="separator-title separation"></div>
+      <div id="title-box">
+        <h2 class="title "> Inscripción </h2>
+        <div  class="separator-title"></div>
       </div>
       <div class="table-content">
         <b-table :data="data" :columns="columns" >
