@@ -8,11 +8,9 @@
           <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
       </div>  
       <div v-else id="item-content">
-      <b-tabs size="is-large" position="is-centered">
           <div        
           v-for="(value) in firebaseInformacion"
           v-bind:key="value.name">
-          <b-tab-item v-bind:label="value.name">
             <div class="columns"> 
               <div class="column is-one-quarter presentation">
                 <div class="photo">
@@ -27,9 +25,7 @@
                 </div>
               </div>
             </div>
-          </b-tab-item>
         </div>
-      </b-tabs>
     </div>
   </div>
 
