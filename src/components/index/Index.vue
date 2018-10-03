@@ -37,7 +37,6 @@
         <Inscription/>
       </section>
     </div>
-
     <div id="ubication" class ="hero is-medium" >
       <section class="hero-body">
           <Ubication/>
@@ -47,6 +46,11 @@
       <section class="hero-body">
         <Exhibitors/>
       </section>
+    </div>
+    <div id ="sponsors" >
+        <section >
+          <Sponsors/>
+        </section>
     </div>
   </div>
 </template>
@@ -60,6 +64,7 @@ import Experts from "../experts/Experts";
 import Competition from '../competition/Competition';
 import Inscription from '../inscription/Inscription';
 import Exhibitors from '../exhibitors/Exhibitors';
+import Sponsors from '../sponsors/Sponsors';
 export default {
   name: 'Index',
   components: {
@@ -71,6 +76,7 @@ export default {
     Competition,
     Inscription,
     Exhibitors,
+    Sponsors,
     },
   created(){
     //console.log("He sido llamado");
