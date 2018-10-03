@@ -3,7 +3,7 @@
   <div id="app-layout">
     <Header></Header>
     <router-view></router-view>
-    <!-- footer -->
+    <Footer></Footer>
   </div>
 </template>
 
@@ -14,10 +14,12 @@
 <script>
 
   import Header from '../header/Header'
+  import Footer from '../footer/Footer'
   export default {
     
     components: {
       Header,
+      Footer,
     }
   }
 </script>
