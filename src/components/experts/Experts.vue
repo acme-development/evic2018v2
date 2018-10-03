@@ -8,24 +8,35 @@
           <breeding-rhombus-spinner :animation-duration="2000" :size="65" color="#EA771D"/>
       </div>  
       <div v-else id="item-content">
-          <div        
-          v-for="(value) in firebaseInformacion"
-          v-bind:key="value.name">
-            <div class="columns"> 
-              <div class="column is-one-quarter presentation">
-                <div class="photo">
-                  <img :src ="value.foto"/>
-                </div>
-              </div>
-              <div class="column content">
-                <div class="info content">
-                  <p>
-                  {{ value.larga}}
-                  </p>
-                </div>
+      
+        <div        
+        class="expert-content"
+        v-for="(value) in firebaseInformacion"
+        v-bind:key="value.name">
+          <div class="columns">
+            <div class="name-expert">
+                <h3> {{value.name}} </h3>
+            </div>
+          </div>
+          <div class="columns"> 
+          
+            <div class="column is-one-quarter presentation">
+              
+              <div class="photo">
+                <img :src ="value.foto" />
               </div>
             </div>
-        </div>
+            <div class="column content">
+              <div class="info">
+                <h3>
+                {{ value.larga}}
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="separator-experts">
+          </div>
+      </div>
     </div>
   </div>
 
