@@ -26,9 +26,9 @@
                 <img :src ="value.foto" />
               </div>
             </div>
-            <div class="column content">
+            <div class="column ">
               <div class="info">
-                <h3>
+                <h3 id="info-expert">
                 {{ value.larga}}
                 </h3>
               </div>
