@@ -21,6 +21,7 @@
         </b-table>
         <h3 class="students-details">{{this.inscription.precios.condicion}}</h3>
       </div>
+        <!--
       <div id="payment-box">
         <div class="subtitle">
           <h3>
@@ -34,6 +35,7 @@
           </div>
         </div>
       </div>
+        -->
     </div>
   </div>
 </template>
