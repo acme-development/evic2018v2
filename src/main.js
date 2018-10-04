@@ -23,7 +23,6 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 })
-//import 'font-awesome/css/font-awesome.css';
 import 'buefy/dist/buefy.css';
 import 'font-awesome/css/font-awesome.css';
 

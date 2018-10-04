@@ -16,6 +16,15 @@ header {
     /*padding-bottom: 0.5%;*/
     justify-content: space-between;
 }
+.item-scroll{
+    width: 100%;
+}
+/*Cambios parael dropdown */
+
+
+.tag {
+    cursor: pointer;
+}
 nav{
     list-style: none;
     margin-top: 0%;
@@ -65,9 +74,6 @@ nav a {
     height: 100%;
     padding: 0px;
 }
-.img-fit{
-
-}
 
 .scroll{
     display:flex;   
@@ -78,6 +84,9 @@ nav a {
 
 .nav-item:hover {
     color: rgb(223, 142, 81);
+}
+#nav-item{
+    margin-top: 10px;
 }
 
 .hamburger {
@@ -111,4 +120,19 @@ nav a {
     nav a {
         padding:0 1em;
     }
+}
+
+
+
+.dropdown-content{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.dropdown-menu{
+    background-color: rgba(49, 63, 73, 0.8);
+}
+
+.dropdown-item{
+    width: 100%;
 }

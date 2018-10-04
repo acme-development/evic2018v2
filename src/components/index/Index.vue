@@ -25,10 +25,9 @@
         <Experts/>
       </section>
     </div>
-
-    <div id="competition" class="hero is-medium">
+    <div id="exhibitors" class="hero is-medium">
       <section class="hero-body">
-        <Competition/>
+        <Exhibitors/>
       </section>
     </div>
 
@@ -37,14 +36,14 @@
         <Inscription/>
       </section>
     </div>
+    <div id="competition" class="hero is-medium">
+      <section class="hero-body">
+        <Competition/>
+      </section>
+    </div>
     <div id="ubication" class ="hero is-medium" >
       <section class="hero-body">
           <Ubication/>
-      </section>
-    </div>
-    <div id="exhibitors" class="hero is-medium">
-      <section class="hero-body">
-        <Exhibitors/>
       </section>
     </div>
     <div id ="organization" class="hero is-medium" >

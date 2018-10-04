@@ -27,8 +27,8 @@
               </div>
             </div>
             <div class="column ">
-              <div class="info">
-                <h3 id="info-expert">
+              <div id="info-expert">
+                <h3>
                 {{ value.larga}}
                 </h3>
               </div>

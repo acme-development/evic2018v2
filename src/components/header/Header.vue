@@ -11,16 +11,30 @@
       <header class="header-align" id="navbar" >
           
           <nav class="navContent columns">
-            <div class ="logo column a-logo">
+            <div class ="logo column is-2  a-logo">
               <a href="/" class ="a-logo"><img class="img-fit" :src="logo"></a>
             </div>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#index'" >INICIO</a>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO</a>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
-            <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
+            <a class="column is-1  is-offset-one-quarter nav-item" id="nav-item" v-scroll-to="'#index'" >INICIO</a>
+            <b-dropdown class ="nav-item is-1 column" hoverable >
+              <a id="nav-item" class ="nav-item" v-scroll-to="'#about'" href ="#" slot="trigger">
+                QUÉ ES EVIC
+              </a>
+              <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#about'"> ¿Qué es EVIC? </a></b-dropdown-item>
+              <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#organization'"> Organizadores </a></b-dropdown-item>
+              <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#sponsors'"> Auspiciadores </a></b-dropdown-item>
+            </b-dropdown>
+            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
+            <!-- <a class="column nav-item" id="nav-item" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a> -->
+            <b-dropdown class ="column is-1" hoverable>
+              <a  class="nav-item" id="nav-item" href ="#" v-scroll-to="'#experts'" slot="trigger">
+                EXPERTOS
+              </a>
+                <b-dropdown-item id="secondary-item"><a id="secondary-item" class="nav-item item-scroll" v-scroll-to="'#experts'" > Oradores/as plenarias </a></b-dropdown-item>
+                <b-dropdown-item id="secondary-item"><a id="secondary-item" class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Expositores </a></b-dropdown-item>
+            </b-dropdown>
+            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
+            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO</a>
+            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
           </nav>
       </header>
     </div> 
