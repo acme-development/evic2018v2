@@ -3,6 +3,11 @@
   <div class="content-align">
 
     <div id="index" class="hero is-medium">
+      <div class="fullscreen-bg">
+        <video autoplay muted loop playsinline  class="fullscreen-bg__video">
+            <source src="https://firebasestorage.googleapis.com/v0/b/evic-2018-usach.appspot.com/o/videobackground%2Fusach.mp4?alt=media&token=72a4bf20-3615-4d51-b386-8839a985e69f" type="video/mp4">
+        </video>
+      </div>
       <section class="hero-body">
         <Title/>
       </section>
