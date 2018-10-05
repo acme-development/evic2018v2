@@ -9,23 +9,27 @@
     color: #ffffff;
     font: 700 60px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #000000;
     text-align: center;
 }
 #title-container h2{
     font: normal 28px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 20px;
     color: #fff;
+    text-shadow: 2px 2px 4px #000000;
 }
 #title-container h3{
     font: normal 20px Futura, Trebuchet MS, Arial, sans-serif;
     margin-bottom: 40px;
     color: #fff;
+    text-shadow: 2px 2px 4px #000000;
 }
 #title-container h4{
     font: normal 20px Futura, Trebuchet MS, Arial, sans-serif;
     font-weight: 510;
     margin-bottom: 40px;
     color: #fff;
+    text-shadow: 2px 2px 4px #000000;
 }
 .separator{
     color: white;
@@ -33,4 +37,5 @@
     width: 100%;
     margin-bottom: 2%;
     height: 5px;
+    box-shadow: 2px 2px 4px #000000;
 }
