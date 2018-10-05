@@ -51,13 +51,12 @@ nav a {
 .navContent{
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 0%;
     margin-bottom: 0px;
     background-color: transparent;
+    align-items: center;
 }
 .navContent a{
     float:left;
-    margin-top: 0%;
     white-space: nowrap;
     color: #ffffff;
     font-weight: bold;
