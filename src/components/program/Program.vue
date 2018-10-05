@@ -14,7 +14,7 @@
         <div class="separator-title"></div>
       </div>
       <div class ="containerImg">
-          <img :src="this.imgProgram.img">
+          <img :src="this.imgProgram">
       </div>
     </div>
   </div>
@@ -46,11 +46,9 @@ export default {
   },
   methods: {
     setData() {
-      const starCountRef = firebase.database().ref('/');
+      const starCountRef = firebase.database().ref('/programa');
       starCountRef.once('value', (snapshot) => {
-        this.fecha = snapshot.val().fecha;
-        this.programa = snapshot.val().programa;
-        this.imgProgram = snapshot.val().imagenPrograma;
+        this.imgProgram = snapshot.val().imagen;
 
         this.spinner = false;
       });

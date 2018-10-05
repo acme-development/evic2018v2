@@ -74,11 +74,14 @@ export default {
   },
   methods: {
     setData() {
-      const starCountRef = firebase.database().ref('/');
+      const starCountRef = firebase.database().ref('/concurso');
       starCountRef.once('value', (snapshot) => {
+        this.firebaseInformacion = snapshot.val();
+        /*
         this.firebaseInformacion = snapshot.val().concurso;
         this.moreInformation = snapshot.val().cortina.mostrar;
         this.msjeMasInformacion = snapshot.val().cortina.texto;
+        */
         this.spinner = false;
       });
     },

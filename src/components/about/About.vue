@@ -25,6 +25,21 @@
             </div>
           </div>
         </div>
+        <div id="comite">
+          <div class="section-margin packages">
+            <h3 class="title ">Comité USACH</h3>
+            <div class="separator-title"></div>
+            <ul id="comite-box" class="grid">
+                <li
+                v-for="(value, index) in this.comite"
+                v-bind:key="index">
+                    <h2>{{ value.chair }}</h2>
+                    <h4>{{ value.nombre }}</h4>
+                    <p>{{ value.correo }}</p>
+                </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -52,13 +67,14 @@ export default {
   },
   methods: {
     setData() {
-      const starCountRef = firebase.database().ref('/');
+      const starCountRef = firebase.database().ref('/que-es-evic');
       starCountRef.once('value', (snapshot) => {
-        const contexto = snapshot.val().acerca.contexto;
-        const evic = snapshot.val().acerca.evic;
-        const publico = snapshot.val().acerca.publico;
+        const contexto = snapshot.val().contexto;
+        const evic = snapshot.val().evic;
+        const publico = snapshot.val().publico;
         this.informacion = [contexto, evic, publico];
-        this.comite = snapshot.val().acerca.comite;
+        this.comite = snapshot.val().comite;
+        console.log(this.comite);
         this.spinner = false;
       });
     },

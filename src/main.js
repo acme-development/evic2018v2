@@ -30,12 +30,12 @@ Vue.config.productionTip = false
 
 // Initialize Firebase
 const config = {
-  apiKey: 'AIzaSyByIUXLRk9lWZ_3OWlmr4QZGGhpGRz4l8U',
-  authDomain: 'evic-2018-usach.firebaseapp.com',
-  databaseURL: 'https://evic-2018-usach.firebaseio.com',
-  projectId: 'evic-2018-usach',
-  storageBucket: '',
-  messagingSenderId: '185555076703',
+  apiKey: "AIzaSyA8QE9g-kzyIEoMTSErN9BpOrhJhIp0E4I",
+    authDomain: "evic2018usach-v2.firebaseapp.com",
+    databaseURL: "https://evic2018usach-v2.firebaseio.com",
+    projectId: "evic2018usach-v2",
+    storageBucket: "evic2018usach-v2.appspot.com",
+    messagingSenderId: "1069255025830"
 };
 firebase.initializeApp(config);
 

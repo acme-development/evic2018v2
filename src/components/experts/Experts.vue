@@ -107,7 +107,7 @@ data() {
 },
 methods: {
     setData() {
-    const starCountRef = firebase.database().ref('plenaria');
+    const starCountRef = firebase.database().ref('/oradores');
     starCountRef.once('value', (snapshot) => {
         this.firebaseInformacion = snapshot.val();
         this.spinner = false;

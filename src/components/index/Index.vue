@@ -2,6 +2,13 @@
 <template>
   <div class="content-align">
 
+
+    <div id="title" class="hero is-medium">
+      <section class="hero-body">
+        <Title/>
+      </section>
+    </div>
+    <!--
     <div id="index" class="hero is-medium">
       <div class="fullscreen-bg">
         <video autoplay muted loop playsinline  class="fullscreen-bg__video">
@@ -12,7 +19,7 @@
         <Title/>
       </section>
     </div>
-
+    -->
     <div id = "about" class="hero is-medium">
       <section class="about hero-body">    
         <About/>

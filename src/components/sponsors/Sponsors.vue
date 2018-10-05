@@ -32,9 +32,9 @@ export default {
     },
     methods:{
         setData(){
-            const starCountRef = firebase.database().ref('/');
+            const starCountRef = firebase.database().ref('/auspiciadores');
             starCountRef.once('value', (snapshot) => {
-                this.auspiciadores = snapshot.val().auspiciadores;
+                this.auspiciadores = snapshot.val();
                 console.log("los tengo");
                 this.spinner = false;
             });
