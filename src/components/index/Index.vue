@@ -56,8 +56,8 @@
         <Organization/>
       </section>
     </div>
-    <div id ="sponsors" >
-        <section >
+    <div id ="sponsors" class="hero is-medium">
+        <section class="hero-body">
           <Sponsors/>
         </section>
     </div>

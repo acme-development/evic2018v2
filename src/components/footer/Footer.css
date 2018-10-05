@@ -4,6 +4,7 @@
 }
 .wrapperFull--dust-dark {
     background: #252525 url("http://1bsvml38tw5620snbn2p4xtx.wpengine.netdna-cdn.com/wp-content/themes/agra15/build/images/dust.png") repeat;
+    position: relative;
 }
 .wrapperFull--dust-brand {
     position: relative;
