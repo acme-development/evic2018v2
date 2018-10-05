@@ -34,15 +34,13 @@
 
 #title-container a{
     font: normal 20px Lato;
-    margin-bottom: 40px;
     color: #f57b00;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 1px 1px 1px #000000;
 }
 #title-container a:hover{
     font: normal 20px Lato;
-    margin-bottom: 40px;
-    color: #a05000;
-    text-shadow: 2px 2px 4px #000000;
+    color: #d1a87f;
+    text-shadow: 1px 1px 1px #000000;
 }
 .separator{
     color: white;

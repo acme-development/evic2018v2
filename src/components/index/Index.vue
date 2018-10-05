@@ -3,23 +3,21 @@
   <div class="content-align">
 
 
-    <div id="title" class="hero is-medium">
+    <!--<div id="title" class="hero is-medium">
       <section class="hero-body">
         <Title/>
       </section>
-    </div>
-    <!--
+    </div>-->
     <div id="index" class="hero is-medium">
       <div class="fullscreen-bg">
         <video autoplay muted loop playsinline  class="fullscreen-bg__video">
-            <source src="https://firebasestorage.googleapis.com/v0/b/evic-2018-usach.appspot.com/o/videobackground%2Fusach.mp4?alt=media&token=72a4bf20-3615-4d51-b386-8839a985e69f" type="video/mp4">
+            <source src="../../assets/usach.mp4" type="video/mp4">
         </video>
       </div>
       <section class="hero-body">
         <Title/>
       </section>
     </div>
-    -->
     <div id = "about" class="hero is-medium">
       <section class="about hero-body">    
         <About/>

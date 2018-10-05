@@ -14,16 +14,15 @@
         v-for="(value) in firebaseInformacion"
         v-bind:key="value.name">
           <div class="columns">
-            <div class="name-expert">
+            <div class="name-expert column is-one-quarter">
                 <h3> {{value.name}} </h3>
             </div>
           </div>
           <div class="columns"> 
-          
-            <div class="column is-one-quarter presentation">
-              
-              <div class="photo">
-                <img :src ="value.foto" />
+            <div class="column is-one-quarter details-expert">
+              <img :src ="value.foto"/>
+              <div class="info-expert">
+                <a v-bind:href="value.link"><h4> {{ value.corta }}</h4></a>
               </div>
             </div>
             <div class="column ">
