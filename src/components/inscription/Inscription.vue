@@ -21,7 +21,7 @@
         </b-table>
         <h3 class="students-details">{{this.inscription.precios.condicion}}</h3>
       </div>
-        <!--
+        
       <div id="payment-box">
         <div class="subtitle">
           <h3>
@@ -29,12 +29,35 @@
             {{this.inscription.medioPago.titulo}}
           </h3>
         </div>
+        <div id="way-to-pay"> 
+          <p> {{this.inscription.medioPago.description}} </p>
+        </div>
         <div id="info-payment">
           <div class="content">
-              <b-table :data="data" :columns="columns"></b-table>
+            
+            <ul >
+              <div v-for="(value) in this.inscription.medioPago.datos" v-bind:key="value.data">
+                <li > {{value.data}} </li>
+              </div>
+            </ul>
+
           </div>
         </div>
       </div>
+      <!-- 
+Incluir la siguiente información de pago en la pestaña “Inscripciones”
+La inscripción se puede pagar vía transferencia electrónica a:
+Nombre de banco: BCI
+Nombre del Titular de la Cuenta: Sociedad de Desarrollo Tecnológico de la Universidad de Santiago de Chile Limitada 
+Número de Cuenta: 11021161
+
+Enviar copia de depósito a inscripción a: inscripciones.evic2018@gmail.com
+
+Para transferencias internacionales, la siguiente información puede ser útil:
+Dirección de la Sucursal: Agustinas 1161, quinto piso, Santiago, Chile
+Código SWIFT: CREDCLRM
+Dirección del Titular de la Cuenta: Alameda del Libertador Bernardo O'higgins 1611
+ 
         -->
     </div>
   </div>
@@ -49,6 +72,7 @@ export default {
   data() {
     return {
       inscription : '',
+      payment:'',
       /*data: [
         { type: 'Profesionales (3 días)', 'price-before': '$135.000', 'price-after': '$145.000' },
         { type: 'Profesionales (1 día)', 'price-before': '$50.000', 'price-after': '$55.000' },
