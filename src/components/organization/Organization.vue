@@ -5,7 +5,7 @@
 
 <template>
     <div class="section-margin packages">
-        <h3 class="title title-w">Organizadores</h3>
+        <h3 class="title title-w">Comité Nacional</h3>
         <div class="separator-title"></div>
         <ul class="grid">
             <li

@@ -1,7 +1,7 @@
 <style src = "./Exhibitors.css"></style>
 <template>
     <div class="container">
-        <div class ="title title-w">Expositores</div>
+        <div class ="title title-w">Tutoriales</div>
         <div class="separator-title"></div>
         <div class="contenedor-expositores">
             <div class="columns is-multiline is-mobile is-centered">
