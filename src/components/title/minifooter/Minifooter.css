@@ -1,0 +1,14 @@
+.img-miniFooter{
+    max-width: 100%;
+    max-height: 75px;
+    padding-bottom: 5px;
+
+}
+#imgs-container-minifooter{
+    background-color:rgba(47, 72, 88,0.8);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.img-box-footer{
+    text-align: center;
+}
