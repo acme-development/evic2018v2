@@ -42,14 +42,14 @@
       </section>
     </div>
 
-    <div id="inscription" class ="hero is-medium">
-      <section class="hero-body">
-        <Inscription/>
-      </section>
-    </div>
     <div id="competition" class="hero is-medium">
       <section class="hero-body">
         <Competition/>
+      </section>
+    </div>
+    <div id="inscription" class ="hero is-medium">
+      <section class="hero-body">
+        <Inscription/>
       </section>
     </div>
     <div id="ubication" class ="hero is-medium" >
