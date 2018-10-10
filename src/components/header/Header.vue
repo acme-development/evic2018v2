@@ -48,7 +48,7 @@
               <b-dropdown class ="nav-item" hoverable>
                 <a class  = "nav-item-hover" v-scroll-to="'#about'" href ="#" slot="trigger">QUÉ ES EVIC</a>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#about'"> ¿Qué es EVIC? </a></b-dropdown-item>
-                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#organization'"> Organizadores </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#organization'"> Comité Nacional </a></b-dropdown-item>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#sponsors'"> Auspiciadores </a></b-dropdown-item>
               </b-dropdown>
             </div>
@@ -59,8 +59,8 @@
               <!--<a class="nav-item" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>-->
               <b-dropdown class ="nav-item" hoverable>
               <a  class="nav-item-hover" href ="#" v-scroll-to="'#experts'" slot="trigger">EXPERTOS</a>
-                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#experts'" > Oradores/as plenarias </a></b-dropdown-item>
-                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Expositores </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#experts'"> Plenaria </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Tutoriales </a></b-dropdown-item>
               </b-dropdown>
             </div>
             <div class="column">  

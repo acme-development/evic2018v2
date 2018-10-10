@@ -27,7 +27,7 @@
         </div>
         <div id="comite">
           <div class="section-margin packages">
-            <h3 class="title ">Comité USACH</h3>
+            <h3 class="title ">Comité Local</h3>
             <div class="separator-title"></div>
             <ul id="comite-box" class="grid">
                 <li
