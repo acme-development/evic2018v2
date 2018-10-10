@@ -5,19 +5,48 @@
 <template>
     <div class="container">
         <div id ="head-sponsors">
+            <h3 class="title">Patrocinadores</h3>
+            <div class="separator-title"></div>
+        </div>
+        <ul class="flex-container wrap">
+        <li
+        class="flex-item"
+        v-for="(value, index) in auspiciadores.patrocinadores"
+        v-bind:key="index">
+
+            <img :src="value.link">
+        </li>
+        </ul>
+
+        <div id ="head-sponsors">
             <h3 class="title">Auspiciadores</h3>
             <div class="separator-title"></div>
         </div>
         <ul class="flex-container wrap">
         <li
         class="flex-item"
-        v-for="(value, index) in auspiciadores"
+        v-for="(value, index) in auspiciadores.auspiciadores"
+        v-bind:key="index">
+
+            <img :src="value.link">
+        </li>
+        </ul>
+
+        <div id ="head-sponsors">
+            <h3 class="title">Organizadores</h3>
+            <div class="separator-title"></div>
+        </div>
+        <ul class="flex-container wrap">
+        <li
+        class="flex-item"
+        v-for="(value, index) in auspiciadores.organizadores"
         v-bind:key="index">
 
             <img :src="value.link">
         </li>
         </ul>
     </div>
+    
 </template>
 
 <script>

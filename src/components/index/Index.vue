@@ -16,6 +16,7 @@
       </div>
       <section class="hero-body">
         <Title/>
+        <Minifooter id="minifooter"/>
       </section>
     </div>
     <div id = "about" class="hero is-medium">
@@ -80,6 +81,7 @@ import Inscription from '../inscription/Inscription';
 import Exhibitors from '../exhibitors/Exhibitors';
 import Sponsors from '../sponsors/Sponsors';
 import Organization from '../organization/Organization';
+import Minifooter from '../title/minifooter/Minifooter';
 export default {
   name: 'Index',
   components: {
@@ -93,6 +95,7 @@ export default {
     Exhibitors,
     Sponsors,
     Organization,
+    Minifooter,
     },
   created(){
     //console.log("He sido llamado");
