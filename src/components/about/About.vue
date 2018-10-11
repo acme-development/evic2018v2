@@ -74,7 +74,6 @@ export default {
         const publico = snapshot.val().publico;
         this.informacion = [contexto, evic, publico];
         this.comite = snapshot.val().comite;
-        console.log(this.comite);
         this.spinner = false;
       });
     },

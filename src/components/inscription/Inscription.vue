@@ -5,60 +5,46 @@
         <h2 class="title "> Inscripción </h2>
         <div  class="separator-title"></div>
       </div>
+      <div class="ins-button"><a v-bind:href="inscription.formulario"><button class="button is-medium is-primary">Inscribirse</button></a></div>
       <div class="table-content">
-        <div class="subtitle">
-          <h3>
-            <i class="fas fa-angle-right"></i>
-            Precios
-          </h3>
-        </div>
-        <b-table :data="this.inscription.precios.data" :columns="columns" >
+        <div class="subtitle"><h3><i class="fas fa-angle-right"></i>Precios</h3></div>
+        <b-table :data="inscription.precios.data" :columns="columns" >
           <template slot-scope="props" slot="header">
             <div class="table-head">
                 {{ props.column.label }}
             </div>
           </template>
         </b-table>
-        <h3 class="students-details">{{this.inscription.precios.condicion}}</h3>
+        <h3 class="students-details">{{inscription.precios.condicion}}</h3>
       </div>
-        
       <div id="payment-box">
-        <div class="subtitle">
-          <h3>
-            <i class="fas fa-angle-right"></i>
-            {{this.inscription.medioPago.titulo}}
-          </h3>
-        </div>
-        <div id="way-to-pay"> 
-          <p> {{this.inscription.medioPago.description}} </p>
-        </div>
+        <div class="subtitle"><h3><i class="fas fa-angle-right"></i>{{ inscription.medioPagoNacional.titulo }}</h3></div>
         <div id="info-payment">
           <div class="content">
-            
             <ul >
-              <div v-for="(value) in this.inscription.medioPago.datos" v-bind:key="value.data">
-                <li > {{value.data}} </li>
+              <div v-for="(value) in inscription.medioPagoNacional.datos" v-bind:key="value.data">
+                <li><div class="ins">{{value.title}}:</div> {{ value.data }}</li>
               </div>
             </ul>
-
           </div>
         </div>
       </div>
-      <!-- 
-Incluir la siguiente información de pago en la pestaña “Inscripciones”
-La inscripción se puede pagar vía transferencia electrónica a:
-Nombre de banco: BCI
-Nombre del Titular de la Cuenta: Sociedad de Desarrollo Tecnológico de la Universidad de Santiago de Chile Limitada 
-Número de Cuenta: 11021161
-
-Enviar copia de depósito a inscripción a: inscripciones.evic2018@gmail.com
-
-Para transferencias internacionales, la siguiente información puede ser útil:
-Dirección de la Sucursal: Agustinas 1161, quinto piso, Santiago, Chile
-Código SWIFT: CREDCLRM
-Dirección del Titular de la Cuenta: Alameda del Libertador Bernardo O'higgins 1611
- 
-        -->
+      <div id="payment-box">
+        <div class="subtitle"><h3><i class="fas fa-angle-right"></i>{{ inscription.medioPago.titulo }}</h3></div>
+        <div id="info-payment">
+          <div class="content">
+            <ul>
+              <li><div class="ins">{{internacional[0].title}}:</div> {{ internacional[0].data }}</li>
+              <li><div class="ins">{{internacional[1].title}}:</div> {{ internacional[1].data }}</li>
+              <li><div class="ins">{{internacional[2].title}}:</div> {{ internacional[2].data }}</li>
+              <li><div class="ins">{{internacional[3].title}}:</div> {{ internacional[3].data }}</li>
+              <li><div class="ins">{{internacional[4].title}}:</div> {{ internacional[4].data }}</li>
+              <li><div class="ins">{{internacional[5].title}}:</div> {{ internacional[5].data }}</li>
+              <li><div class="ins">{{internacional[6].title}}:</div> {{ internacional[6].data }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -71,15 +57,9 @@ export default {
 	components:{},
   data() {
     return {
-      inscription : '',
+      inscription : {},
+      internacional: {},
       payment:'',
-      /*data: [
-        { type: 'Profesionales (3 días)', 'price-before': '$135.000', 'price-after': '$145.000' },
-        { type: 'Profesionales (1 día)', 'price-before': '$50.000', 'price-after': '$55.000' },
-        { type: 'Miembros IEEE', 'price-before': '$57.000', 'price-after': '$63.000' },
-        { type: 'Estudiantes', 'price-before': '$35.000', 'price-after': '$39.000' },
-        { type: 'Estudiantes IEEE (miembro activo)', 'price-before': '$17.000', 'price-after': '$20.000' },
-      ],*/
       columns: [
         {
           field: 'type',
@@ -104,9 +84,9 @@ export default {
       const starCountRef = firebase.database().ref('/inscripcion');
       starCountRef.once('value', (snapshot) => {
         const inscription = snapshot.val();
-        console.log(inscription);
         this.inscription = inscription;
         this.spinner = false;
+        this.internacional = inscription.medioPago.datos;
       });
     },
   },

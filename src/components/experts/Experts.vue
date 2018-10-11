@@ -1,7 +1,7 @@
 <template>  
   <div class="section-margin">
     <div class="container"> 
-      <div class ="title">Plenaria</div>
+      <div class ="title">Plenarias</div>
       <div class="separator-title"></div>
       
       <div class="overlay" v-if="spinner">
