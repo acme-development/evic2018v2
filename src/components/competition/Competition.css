@@ -8,4 +8,9 @@
 
 .subtitle-1 h3{
     color: white;
+    font-size: 30px;
+}
+
+.info a:hover{
+    color: #f57b00;
 }

@@ -37,10 +37,10 @@
               </b-dropdown>
             </div>
             <div class="column">  
-              <a class="nav-item" href ="#" v-scroll-to="'#competition'">POSTERS</a>
+              <a class="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
             </div>
             <div class="column">  
-              <a class="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
+              <a class="nav-item" href ="#" v-scroll-to="'#competition'">POSTERS</a>
             </div>
             <div class="column">  
               <a class="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
