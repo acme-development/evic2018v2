@@ -3,6 +3,7 @@
   margin-top: 1.5%;
   font-weight: 540;
   color: #2a3e4d;
+  text-align: justify;
 }
 .table-head{
   color:#ea771d;
@@ -28,5 +29,12 @@
 #way-to-pay p{
   font-weight: 540;
   font-size:20px;
+}
+.ins{
+  font-weight: bold;
+  display: inline;
+}
+.ins-button{
+  text-align: center;
 }
     

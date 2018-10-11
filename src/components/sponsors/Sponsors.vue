@@ -64,7 +64,6 @@ export default {
             const starCountRef = firebase.database().ref('/auspiciadores');
             starCountRef.once('value', (snapshot) => {
                 this.auspiciadores = snapshot.val();
-                console.log("los tengo");
                 this.spinner = false;
             });
         }

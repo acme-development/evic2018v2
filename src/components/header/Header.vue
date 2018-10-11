@@ -9,33 +9,6 @@
     </div>
     <div v-else class="elses" >
       <header class="header-align" id="navbar" >
-        <!---
-          <nav class="navContent columns">
-            <div class ="logo column is-2  a-logo">
-              <a href="/" class ="a-logo"><img class="img-fit" :src="logo"></a>
-            </div>
-            <a class="column is-1  is-offset-one-quarter nav-item" id="nav-item" v-scroll-to="'#index'" >INICIO</a>
-            <b-dropdown class ="nav-item is-1 column" hoverable >
-              <a id="nav-item" class ="nav-item" v-scroll-to="'#about'" href ="#" slot="trigger">
-                QUÉ ES EVIC
-              </a>
-              <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#about'"> ¿Qué es EVIC? </a></b-dropdown-item>
-              <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#organization'"> Organizadores </a></b-dropdown-item>
-              <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#sponsors'"> Auspiciadores </a></b-dropdown-item>
-            </b-dropdown>
-            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
-            <b-dropdown class ="column is-1" hoverable>
-              <a  class="nav-item" id="nav-item" href ="#" v-scroll-to="'#experts'" slot="trigger">
-                EXPERTOS
-              </a>
-                <b-dropdown-item id="secondary-item"><a id="secondary-item" class="nav-item item-scroll" v-scroll-to="'#experts'" > Oradores/as plenarias </a></b-dropdown-item>
-                <b-dropdown-item id="secondary-item"><a id="secondary-item" class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Expositores </a></b-dropdown-item>
-            </b-dropdown>
-            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
-            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO</a>
-            <a class="column is-1 nav-item" id="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
-          </nav>
-          -->
           <div class ="logo">
             <a href="/" class="img-fit"><img :src="logo"></a>
           </div>
@@ -59,7 +32,7 @@
               <!--<a class="nav-item" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>-->
               <b-dropdown class ="nav-item" hoverable>
               <a  class="nav-item-hover" href ="#" v-scroll-to="'#experts'" slot="trigger">EXPERTOS</a>
-                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#experts'"> Plenaria </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#experts'"> Plenarias </a></b-dropdown-item>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Tutoriales </a></b-dropdown-item>
               </b-dropdown>
             </div>
@@ -67,17 +40,16 @@
               <a class="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
             </div>
             <div class="column">  
+<<<<<<< HEAD
               <a class="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO POSTERS</a>
+=======
+              <a class="nav-item" href ="#" v-scroll-to="'#competition'">POSTERS</a>
+>>>>>>> 94ee32fc8dde23fc0620b08f8bb102bc7b5f318e
             </div>
             <div class="column">  
               <a class="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
-            </div>
-            
-            
-            
-            
-            
-</nav>
+            </div>    
+          </nav>
       </header>
     </div> 
 </template>
@@ -110,12 +82,10 @@ export default {
       setData() {
         window.addEventListener('scroll', this.handleScroll);
         const starCountRef = firebase.database().ref('/inico');
-        console.log("antes de firebase")
         starCountRef.once('value', (snapshot) => {
           this.titulo = snapshot.val().titulo;
           this.image = snapshot.val().fondo;
           this.logo = snapshot.val().logo;
-          console.log("Se obtiene el valor");
           this.footer = snapshot.val().footer;
           //this.logo = snapshot.val().logo;
           this.spinner = false;
