@@ -1,8 +1,6 @@
-# evic2018
+# EVIC 2018
 
-> proyecto para la creación de la página EVIC 2018 desde 0
-
-## Build Setup
+## Ejecución del proyecto
 
 ``` bash
 # install dependencies
@@ -18,4 +16,4 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+El proyecto ha sido realizado con VueJs en conjunto con Firebase.
