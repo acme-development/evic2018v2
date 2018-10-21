@@ -47,6 +47,11 @@
         <Inscription/>
       </section>
     </div>
+    <div id="scholarship" class="hero is-medium">
+      <section class ="hero-body">
+        <Scolarship/>
+      </section>
+    </div>
     <div id="competition" class="hero is-medium">
       <section class="hero-body">
         <Competition/>
