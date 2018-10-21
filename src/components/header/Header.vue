@@ -40,11 +40,7 @@
               <a class="nav-item" href ="#" v-scroll-to="'#inscription'" >INSCRIPCIÓN</a>
             </div>
             <div class="column">  
-<<<<<<< HEAD
               <a class="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO POSTERS</a>
-=======
-              <a class="nav-item" href ="#" v-scroll-to="'#competition'">POSTERS</a>
->>>>>>> 94ee32fc8dde23fc0620b08f8bb102bc7b5f318e
             </div>
             <div class="column">  
               <a class="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
