@@ -11,9 +11,6 @@
             <h2 class="title "> Inscripción </h2>
             <div  class="separator-title"></div>
         </div>
-        <h1> {{detail}} </h1>
-        <h1> {{general}} </h1>
-        <h1> {{footer}} </h1>
     </div>
 </template>
 
