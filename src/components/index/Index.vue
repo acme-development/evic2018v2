@@ -49,7 +49,7 @@
     </div>
     <div id="scholarship" class="hero is-medium">
       <section class ="hero-body">
-        <Scolarship/>
+        <Scholarship/>
       </section>
     </div>
     <div id="competition" class="hero is-medium">
@@ -87,6 +87,7 @@ import Exhibitors from '../exhibitors/Exhibitors';
 import Sponsors from '../sponsors/Sponsors';
 import Organization from '../organization/Organization';
 import Minifooter from '../title/minifooter/Minifooter';
+import Scholarship from '../scholarship/Scholarship';
 export default {
   name: 'Index',
   components: {
@@ -101,6 +102,7 @@ export default {
     Sponsors,
     Organization,
     Minifooter,
+    Scholarship,
     },
   created(){
     //console.log("He sido llamado");
