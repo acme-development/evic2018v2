@@ -16,7 +16,7 @@
         </b-table>
         <h3 class="students-details">{{ inscription.precios.condicion }}</h3>
       </div>
-      <div class="payment-box">
+      <!--div class="payment-box">
         <div class="subtitle"><h3><i class="fas fa-angle-right"></i> {{ inscription.medioPagoNacional.titulo }}</h3></div>
         <div id="info-payment">
           <div class="content">
@@ -27,7 +27,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div-->
       <div class="payment-box">
         <div class="subtitle"><h3><i class="fas fa-angle-right"></i> {{ inscription.medioPago.titulo }}</h3></div>
         <div id="info-payment">
