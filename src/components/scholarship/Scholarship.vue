@@ -47,6 +47,19 @@
             </ul>
           </div>
         </div>
+        <div class="box-info" id="special-content">
+          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right"></i>{{this.special.title}}</h3></div>
+          <div class="content content-w">
+            <div id="par-special">
+              <p>{{this.special.par}}</p>
+            </div>
+            <ul >
+              <div class="data-row-sch" v-for="(value) in this.special.data" v-bind:key="value.data">
+                <li>{{ value }}</li>
+              </div>
+            </ul>
+          </div>
+        </div>
         <div class = "box-info" id="footer-content">
           <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right"></i>{{this.footer.title}}</h3></div>
           <div class="content">
@@ -73,6 +86,7 @@ export default {
         title:'',
         detail:'',
         general:'',
+        special:'',
         footer:'',
     };
   },
@@ -86,6 +100,7 @@ export default {
         this.detail = becas.detail;
         this.footer = becas.footer;
         this.title = becas.title;
+        this.special = becas.especial;
         this.spinner = false;
       });
     },
