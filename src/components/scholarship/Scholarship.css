@@ -1,0 +1,23 @@
+.data-row-sch li{
+    color: #ffffff;
+}
+.box-info{
+    margin-top: 3%;
+}
+.box-sch{
+    margin-top: 7%;
+}
+#sch-description div{
+    white-space: nowrap;
+}
+.nowrap{
+    white-space: nowrap;
+    color: #ffffff;
+}
+#email{
+    color: #f87a00;
+}
+.tablecell{
+    display: table-cell;
+
+}

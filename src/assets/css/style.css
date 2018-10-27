@@ -105,6 +105,9 @@ hr{
     font-variant: normal;
     margin-bottom: 2%;
 }
+.subtitle-w h3{
+    color: #ffffff;
+}
 .content{
     color: #313f49;
     font-family: Lato, sans-serif; 
@@ -114,6 +117,9 @@ hr{
     font-weight: 400; 
     line-height: 26.4px; 
     text-align: justify;
+}
+.content-w p{
+    color: #ffffff;
 }
 .separator-title{
     color: #f57b00;

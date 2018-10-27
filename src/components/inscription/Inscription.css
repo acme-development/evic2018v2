@@ -23,7 +23,7 @@
 .left-card{
   margin-right: 1%;
 }
-#payment-box{
+.payment-box{
   margin-top: 3%;
 }
 #way-to-pay p{
@@ -36,5 +36,6 @@
 }
 .ins-button{
   text-align: center;
+  margin-top: 4%;
 }
     
