@@ -11,7 +11,7 @@
     <div id="index" class="hero is-medium">
       <div class="fullscreen-bg">
         <video autoplay muted loop playsinline  class="fullscreen-bg__video">
-            <source src="../../assets/usach.mp4" type="video/mp4">
+            <source src="https://raw.githubusercontent.com/acme-development/evic2018v2/develop/src/assets/usach.mp4" type="video/mp4">
         </video>
       </div>
       <section class="hero-body">
