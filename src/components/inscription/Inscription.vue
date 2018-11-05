@@ -6,7 +6,7 @@
         <div  class="separator-title"></div>
       </div>
       <div class="table-content">
-        <div class="subtitle"><h3><i class="fas fa-angle-right"></i>Precios</h3></div>
+        <div class="subtitle"><h3><i class="fas fa-angle-right"></i> Precios</h3></div>
         <b-table :data="inscription.precios.data" :columns="columns" >
           <template slot-scope="props" slot="header">
             <div class="table-head">
