@@ -22,13 +22,12 @@
             <h3 class="title">Auspiciadores</h3>
             <div class="separator-title"></div>
         </div>
-        <ul class="flex-container wrap">
+        <ul class="flex-container wrap columns">
         <li
-        class="flex-item"
+        class=" flex-item column is-one-third"
         v-for="(value, index) in auspiciadores.auspiciadores"
         v-bind:key="index">
-
-            <img :src="value.link">
+                <img :src="value.link">
         </li>
         </ul>
 
