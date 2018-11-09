@@ -21,8 +21,8 @@
       </div>
       <div class = "box-info box-sch" id="content-box">
         <div id ="general-content">
-          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right"></i>{{this.general.title}}</h3></div>
-          <div class="content content-w">
+          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{this.general.title}}</h3></div>
+          <div class="content content-w beautyletter">
             <span class="tablecell">
               <div class="nowrap"> {{this.general.data[0]}} </div>
               <div class ="tablecell" v-for="(value,index) in this.general.emails" v-bind:key ="value.data">
@@ -33,13 +33,13 @@
                   {{value}}&nbsp y &nbsp
                 </div>
               </div>
-              <div class="nowrap tablecell content-w"> {{this.general.data[1]}} </div>
+              <div class="nowrap tablecell content-w beautyletter"> {{this.general.data[1]}} </div>
             </span>
             </div>
         </div>
         <div class = "box-info" id="detail-content">
-          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right"></i>{{this.detail.title}}</h3></div>
-          <div class="content">
+          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{this.detail.title}}</h3></div>
+          <div class="content content-w beautyletter">
             <ul >
               <div class="data-row-sch" v-for="(value) in this.detail.data" v-bind:key="value.data">
                 <li>{{ value }}</li>
@@ -48,8 +48,8 @@
           </div>
         </div>
         <div class="box-info" id="special-content">
-          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right"></i>{{this.special.title}}</h3></div>
-          <div class="content content-w">
+          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{this.special.title}}</h3></div>
+          <div class="content content-w beautyletter">
             <div id="par-special">
               <p>{{this.special.par}}</p>
             </div>
@@ -60,9 +60,18 @@
             </ul>
           </div>
         </div>
+        <div class="box-info" id="special-content" v-for="(value) in this.becasmujeres" v-bind:key="value.data">
+          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{ value.title}}</h3></div>
+          <div class="content content-w link-orange beautyletter">
+            <p v-html="value.data"></p>
+          </div>
+        </div>
+        <div class="box-info">
+          <div class="subtitle content-w link-orange"><a v-bind:href="becasmujeres[0].link">IEEE Computational Intelligence Society</a></div>
+        </div>
         <div class = "box-info" id="footer-content">
-          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right"></i>{{this.footer.title}}</h3></div>
-          <div class="content">
+          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{this.footer.title}}</h3></div>
+          <div class="content content-w beautyletter">
             <ul >
               <div class="data-row-sch" v-for="(value) in this.footer.data" v-bind:key="value.data">
                 <li>{{ value }}</li>
@@ -88,6 +97,7 @@ export default {
         general:'',
         special:'',
         footer:'',
+        becasmujeres: '',
     };
   },
   methods:{
@@ -101,6 +111,7 @@ export default {
         this.footer = becas.footer;
         this.title = becas.title;
         this.special = becas.especial;
+        this.becasmujeres = becas.becasmujeres;
         this.spinner = false;
       });
     },

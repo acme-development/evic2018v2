@@ -36,17 +36,22 @@
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Tutoriales </a></b-dropdown-item>
               </b-dropdown>
             </div>
-            <div class="column">
-              <!--<a class="nav-item" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>-->
-              <b-dropdown class ="nav-item" hoverable>
+            <!--div class="column">
+              <<a class="nav-item" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>-->
+              <!--b-dropdown class ="nav-item" hoverable>
                 <a class  = "nav-item-hover" v-scroll-to="'#inscription'" href ="#" slot="trigger">INSCRIPCIÓN</a>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#inscription'"> Inscripción </a></b-dropdown-item>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#scholarship'"> Becas </a></b-dropdown-item>
               </b-dropdown>
+            </div-->
+            <div class="column">
+              <a class="nav-item" v-scroll-to="'#inscription'"> INSCRIPCIÓN </a>
+            </div>
+            <div class="column">
+              <a class="nav-item" v-scroll-to="'#scholarship'"> BECAS </a>
             </div>
             <div class="column">  
               <a class="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO POSTERS</a>
-
             </div>
             <div class="column">  
               <a class="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a>
