@@ -28,6 +28,7 @@
         v-for="(value, index) in auspiciadores.auspiciadores"
         v-bind:key="index">
                 <img :src="value.link">
+                
         </li>
         </ul>
 
