@@ -6,10 +6,32 @@
         <div class="contenedor-expositores">
             <div class="columns is-multiline is-mobile is-centered">
                 <div class="column is-one-third expositor" v-for="(value) in firebaseInformacion" v-bind:key="value.name">
-                    <div align="center">
-                        <figure class ="image is-128x128">
-                            <img :src="value.image" class="is-rounded">
-                        </figure>
+                    <div align="center" >
+                        <div v-if="value.resumen !== undefined">
+                             <b-tooltip
+                            id="text-tool-tip"
+                            :label="value.resumen"
+                            position="is-bottom"
+                            size="is-large"
+                            multilined>    
+                            <figure class ="image is-128x128">
+                                <img :src="value.image" class="is-rounded">
+                            </figure>
+                            </b-tooltip>
+                        </div>
+                        <div v-else>
+                            <b-tooltip  
+                            id="text-tool-tip"
+                            label="Resumen no disponible"
+                            position="is-bottom"
+                            size="is-large"
+                            multilined>    
+                            <figure class ="image is-128x128">
+                                <img :src="value.image" class="is-rounded">
+                            </figure>
+                            </b-tooltip>
+                        </div>
+                       
                     </div>
                     <div class="expositor">
                         <h3>
@@ -43,6 +65,9 @@ export default {
             starCountRef.once('value', (snapshot) => {
                 this.firebaseInformacion = snapshot.val();
             });
+        },
+        createToolTips: function(){
+                
         }
     },
 }

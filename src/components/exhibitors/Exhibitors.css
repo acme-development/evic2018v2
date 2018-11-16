@@ -21,3 +21,22 @@
 .image img{
     border:2px solid #423d38;
 }
+#text-tool-tip{
+    font-size: 20px;
+  }
+  .tooltip:after {
+      font-size:  1.1rem;
+      background-size: 100% 100%;
+  }
+  .tooltip.is-primary::after {
+    background: #e78421;
+    color: #fff;
+}
+
+.tooltip.is-bottom.is-multiline.is-large::after {
+    width: 400px;
+}
+
+.tooltip.is-bottom.is-primary::before {
+    border-bottom: 5px solid #e78421;
+}
