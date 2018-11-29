@@ -4,10 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10%;
 }
 .packages .grid li {
-    padding: 50px;
-    flex-basis: 50%;
     text-align: center;
 }
 
@@ -17,7 +16,6 @@
 
 .packages .grid li h4 {
     font-size: 30px;
-    margin: 25px 0;
     color: #ffffff
 }
 .packages .grid li p {

@@ -4,7 +4,7 @@
 </style>
 
 <template>
-    <div class="section-margin packages">
+    <!--div class="section-margin packages">
         <h3 class="title title-w">Comité Nacional</h3>
         <div class="separator-title"></div>
         <ul class="grid">
@@ -16,7 +16,22 @@
                 <p>{{ value.corta }}</p>
             </li>
         </ul>
-    </div>
+    </div-->
+    <div class="container">
+        <h3 class="title title-w">Comité Nacional</h3>
+        <div class="separator-title"></div>
+            <div class="columns is-multiline is-mobile is-centered contenedor-expositores">
+                <div class="column is-one-third packages" v-for="(value, index) in organizadores" v-bind:key="index">
+                    <ul class="grid">
+                        <li>
+                            <h2>{{ value.cargo }}</h2>
+                            <h4>{{ value.name }}</h4>
+                            <p>{{ value.corta }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </template>
 
 <script>
