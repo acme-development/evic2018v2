@@ -16,7 +16,7 @@
           <div v-if="value.mostrar">
             <div class="subtitle">
               <h3>
-                <i class="fas fa-angle-right"></i>
+                <i class="fas fa-angle-right orange"></i>
                 {{ value.titulo }}
               </h3>
             </div>
@@ -25,7 +25,7 @@
             </div>
           </div>
         </div>
-        <div id="comite">
+        <!--div id="comite">
           <div class="section-margin packages">
             <h3 class="title ">Comité Local</h3>
             <div class="separator-title"></div>
@@ -39,7 +39,22 @@
                 </li>
             </ul>
           </div>
-        </div>
+        </div-->
+        <div class="section-margin">
+          <h3 class="title">Comité Local</h3>
+          <div class="separator-title"></div>
+            <div class="columns is-multiline is-mobile is-centered contenedor-expositores">
+                <div class="column is-one-third packages" v-for="(value, index) in this.comite" v-bind:key="index">
+                    <ul class="grid-black">
+                        <li>
+                            <h2>{{ value.chair }}</h2>
+                            <h4>{{ value.nombre }}</h4>
+                            <p>{{ value.correo }}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>

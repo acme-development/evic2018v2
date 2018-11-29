@@ -12,3 +12,29 @@
     color: #313f49;
 
 }
+
+.grid-black {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.packages .grid-black li {
+    text-align: center;
+}
+
+.packages .grid-black li i {
+    color: #ffffff;
+}
+
+.packages .grid-black li h4 {
+    font-size: 30px;
+    color: #313f49
+}
+.packages .grid-black li p {
+    color:#EA771D
+}
+.packages .grid-black li h2 {
+    color: #313f49
+}
