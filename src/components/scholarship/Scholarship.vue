@@ -20,23 +20,6 @@
         <div class="separator-title"></div>
       </div>
       <div class = "box-info box-sch" id="content-box">
-        <div id ="general-content">
-          <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{this.general.title}}</h3></div>
-          <div class="content content-w beautyletter">
-            <span class="tablecell">
-              <div class="nowrap"> {{this.general.data[0]}} </div>
-              <div class ="tablecell" v-for="(value,index) in this.general.emails" v-bind:key ="value.data">
-                <div id="email" class ="nowrap" v-if="(general.emails.length-1) == index" >
-                  {{value}},&nbsp
-                </div>
-                <div id="email" class="nowrap" v-else>
-                  {{value}}&nbsp y &nbsp
-                </div>
-              </div>
-              <div class="nowrap tablecell content-w beautyletter"> {{this.general.data[1]}} </div>
-            </span>
-            </div>
-        </div>
         <div class = "box-info" id="detail-content">
           <div class="subtitle subtitle-w"><h3><i class="fas fa-angle-right orange"></i> {{this.detail.title}}</h3></div>
           <div class="content content-w beautyletter">
