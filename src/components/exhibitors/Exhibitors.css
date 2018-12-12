@@ -18,6 +18,9 @@
     font-weight: lighter;
     margin-bottom: 2%;
 }
+.institucion a:hover{
+    color: #e78421;
+}
 .image img{
     border:2px solid #423d38;
 }

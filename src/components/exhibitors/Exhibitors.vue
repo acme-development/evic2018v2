@@ -42,6 +42,9 @@
                         <h3>
                             {{ value.institucion }}
                         </h3>
+                        <div v-if="value.extra!=''">
+                            <h2 v-html="value.extra"></h2>
+                        </div>
                     </div>
                 </div>
             </div>
