@@ -1,4 +1,4 @@
-#navbar{
+/*#navbar{
     height: 70px;
     
 }
@@ -17,9 +17,9 @@ header {
 }
 .item-scroll{
     width: 100%;
-}
+}*/
 /*Cambios parael dropdown */
-
+/*
 
 .tag {
     cursor: pointer;
@@ -150,4 +150,137 @@ nav a {
 }
 .column{
     padding-bottom: 0px;
+}*/
+header {
+
+	background-color: rgba(49, 63, 73, 0.6);
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #e78421;
+    z-index: 100;
+}
+
+#logo{
+	float: left;
+	width: 200px;
+    height: 70px;
+    margin: 10px;
+	display: block;
+
+}
+
+nav {
+	float: right;
+	padding: 20px;	
+}
+nav a{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+nav a:hover{
+    color: #e78421;
+}
+
+#menu-icon {
+
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: #e78421 url(http://treehouse-blog.s3.amazonaws.com/Respond-Menu/img/menu-icon.png) center;
+
+}
+
+a:hover#menu-icon {
+
+	background-color: #e78421;
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	padding: 10px
+
+}
+
+.current {
+	color: rgb(255, 255, 255);
+
+}
+
+.dropdown-menu{
+    margin-top: 17px;
+}
+.dropdown-content{
+    background-color: rgba(49, 63, 73, 0.6);
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+	header {
+        background-color: rgba(49, 63, 73, 0.6);
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #e78421;
+    z-index: 100;
+
+	}
+
+	#menu-icon {
+		display:inline-block;
+	}
+
+	nav ul, nav:active ul { 
+        margin-top: 15px;
+		display: none;
+		position: absolute;
+        background-color: rgba(49, 63, 73, 0.6);;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+	nav:hover ul {
+		display: block;
+    }
+    .dropdown-content{
+        padding-bottom: 0%;
+        padding-top: 0%;
+        width: 75%;
+    }
+
+    
+    .dropdown-menu{
+        /*background-color:rgba(49, 63, 73, 0.6);*/
+        margin-top: 0px;
+        left: -175%;
+        top: 0px;
+    }
+    
 }

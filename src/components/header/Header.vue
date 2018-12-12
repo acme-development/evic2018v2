@@ -7,7 +7,37 @@
           color="#EA771D"
         />
     </div>
-    <div v-else class="elses" >
+    <div v-else>
+      <header>
+        <a href="#" id="logo"><img src="https://raw.githubusercontent.com/acme-development/images/master/logo/logosmall.png" alt=""></a>
+        <nav>
+          <a href="#" id="menu-icon"></a>
+          <ul>
+            <li>
+              <b-dropdown class ="nav-item" hoverable>
+                <a class  = "nav-item-hover" v-scroll-to="'#about'" href ="#" slot="trigger">QUÉ ES EVIC</a>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#about'"> ¿Qué es EVIC? </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#organization'"> Comité Nacional </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#sponsors'"> Auspiciadores </a></b-dropdown-item>
+              </b-dropdown>
+            </li>
+            <li><a class="nav-item" href ="#" v-scroll-to="'#program'" >PROGRAMA</a></li>
+            <li>
+              <b-dropdown class ="nav-item" hoverable>
+              <a  class="nav-item-hover" href ="#" v-scroll-to="'#experts'" slot="trigger">EXPERTOS</a>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#experts'"> Plenarias </a></b-dropdown-item>
+                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Tutoriales </a></b-dropdown-item>
+              </b-dropdown>
+            </li>
+            <li><a class="nav-item" v-scroll-to="'#inscription'"> INSCRIPCIÓN </a></li>
+            <li><a class="nav-item" v-scroll-to="'#scholarship'"> BECAS </a></li>
+            <li><a class="nav-item" href ="#" v-scroll-to="'#competition'">CONCURSO POSTERS</a></li>
+            <li><a class="nav-item" href ="#" v-scroll-to="'#ubication'" >UBICACIÓN</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <!--div v-else class="elses" >
       <header class="header-align" id="navbar" >
           <div class ="logo">
             <a href="/" class="img-fit"><img :src="logo"></a>
@@ -17,7 +47,6 @@
               <a class="nav-item" href ="#" v-scroll-to="'#index'" >INICIO</a>
             </div>
             <div class="column">
-              <!--<a class="nav-item" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>-->
               <b-dropdown class ="nav-item" hoverable>
                 <a class  = "nav-item-hover" v-scroll-to="'#about'" href ="#" slot="trigger">QUÉ ES EVIC</a>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#about'"> ¿Qué es EVIC? </a></b-dropdown-item>
@@ -29,21 +58,12 @@
               <a class="nav-item" href ="#" v-scroll-to="'#program'" >PROGRAMA</a>
             </div>
             <div class="column">  
-              <!--<a class="nav-item" href ="#" v-scroll-to="'#experts'" >EXPERTOS</a>-->
               <b-dropdown class ="nav-item" hoverable>
               <a  class="nav-item-hover" href ="#" v-scroll-to="'#experts'" slot="trigger">EXPERTOS</a>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#experts'"> Plenarias </a></b-dropdown-item>
                 <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#exhibitors'" > Tutoriales </a></b-dropdown-item>
               </b-dropdown>
             </div>
-            <!--div class="column">
-              <<a class="nav-item" href ="#" v-scroll-to="'#about'" >QUÉ ES EVIC</a>-->
-              <!--b-dropdown class ="nav-item" hoverable>
-                <a class  = "nav-item-hover" v-scroll-to="'#inscription'" href ="#" slot="trigger">INSCRIPCIÓN</a>
-                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#inscription'"> Inscripción </a></b-dropdown-item>
-                <b-dropdown-item><a class="nav-item item-scroll" v-scroll-to="'#scholarship'"> Becas </a></b-dropdown-item>
-              </b-dropdown>
-            </div-->
             <div class="column">
               <a class="nav-item" v-scroll-to="'#inscription'"> INSCRIPCIÓN </a>
             </div>
@@ -58,7 +78,7 @@
             </div>    
           </nav>
       </header>
-    </div> 
+    </div--> 
 </template>
 
 <script>
