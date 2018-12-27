@@ -1,6 +1,6 @@
 
 #title-container{
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     animation: 1s slidefade 1s forwards;
     position: 50% 50%;
@@ -33,13 +33,14 @@
 }
 
 #title-container a{
+    padding: 5px;
     font: normal 20px Lato;
-    color: #f57b00;
-    text-shadow: 1px 1px 1px #000000;
+    color: #faab02;
+    text-shadow: 1px 0px 1px #000000;
 }
 #title-container a:hover{
     font: normal 20px Lato;
-    color: #d1a87f;
+    color: #5591df;
     text-shadow: 1px 1px 1px #000000;
 }
 .separator{
@@ -49,4 +50,34 @@
     margin-bottom: 2%;
     height: 5px;
     box-shadow: 2px 2px 4px #000000;
+}
+
+#filters {
+    width: 500px;
+    margin: 30px auto;
+}
+#gallery {
+    width: 270px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+#filters span {
+    margin: 15px;
+}
+  
+.thumbnailfade-leave-active,
+.thumbnailfade-enter-active {
+    transition: all 0.4s ease;
+}
+  
+.thumbnailfade-enter-active {
+    transition-delay: 0.4s;
+}
+  
+.thumbnailfade-enter,
+.thumbnailfade-leave-to {
+    opacity: 0;
 }

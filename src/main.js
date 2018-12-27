@@ -8,6 +8,11 @@ import VueSVGIcon from 'vue-svgicon';
 import firebase from 'firebase';
 import VueScrollTo from 'vue-scrollto';
 
+import Lightbox from 'vue-my-photos';
+
+Vue.component('lightbox', Lightbox);
+
+Vue.use(Lightbox);
 Vue.use(Buefy);
 Vue.use(VueSVGIcon);
 Vue.use(VueScrollTo, {
